@@ -1,6 +1,12 @@
 .movie-card-element {
     background-color: rgba(0, 0, 0, 0.963);
-    width: 400px;
+    width: 350px;
     height: 500px;
+    color: #ffff;
 }
 
+.movie-card-element>img {
+    width: 100%;
+    height: 70%;
+    object-fit: fill;
+}
