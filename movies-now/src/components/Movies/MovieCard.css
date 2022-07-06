@@ -1,11 +1,11 @@
 .movie-card-element {
-    background-color: rgba(0, 0, 0, 0.963);
+    background-color: rgba(27, 25, 25, 0.868);
     color: #ffff;
 
     margin: 30px auto;
     width: 270px;
     height: 450px;
-    
+
     border-radius: 10px;
 }
 
