@@ -1,5 +1,8 @@
-import { getMoviesByTitle } from "../../services/movieService";
 import { useState, useEffect } from 'react';
+
+import { getMoviesByTitle } from '../../services/movieService';
+
+import MovieCard from './MovieCard';
 
 const Movies = () => {
     const [movies, setMovies] = useState([]);
@@ -22,16 +25,15 @@ const Movies = () => {
                 onChange={(ev) => setSearchTerm(ev.target.value)}>
             </input>
 
+            <button onClick={() => searchMovies(searchTerm)}>Search</button>
+
             <ul>
                 {movies
-                    ? movies.map(
-                        ({ Title, imdbID }) =>
-                            <li key={imdbID}>{Title}</li>)
-                    : <p>No Movies</p>
+                    ? movies.map(movie => <MovieCard movie={movie} />)
+                    : <li id='no-movies'>No Movies</li>
                 }
             </ul>
 
-            <button onClick={() => searchMovies(searchTerm)}></button>
         </>
     );
 }
