@@ -2,7 +2,11 @@ import { getMoviesByTitle } from "../../services/movieService";
 import { useState, useEffect } from 'react';
 
 const Movies = () => {
-  
+    const [movies, setMovies] = useState([]);
+    const [searchTerm, setSearchTerm] = useState('');
+
+   
+
     return (
         <>
             <input
