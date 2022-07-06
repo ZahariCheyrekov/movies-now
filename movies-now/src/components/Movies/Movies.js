@@ -1,12 +1,26 @@
+import { getMoviesByTitle } from "../../services/movieService";
+import { useState, useEffect } from 'react';
+
 const Movies = () => {
-    const getMovies = () => {
-        return fetch('http://www.omdbapi.com?apikey=5c5d0828&s=Superman')
-            .then(res => res.json())
-            .then(data => console.log(data));
-    }
+  
     return (
         <>
-            <button onClick={getMovies}>Get Movies</button>
+            <input
+                placeholder="Enter movie title"
+                value={searchTerm}
+                onChange={(ev) => setSearchTerm(ev.target.value)}>
+            </input>
+
+            <ul>
+                {movies
+                    ? movies.map(
+                        ({ Title, imdbID }) =>
+                            <li key={imdbID}>{Title}</li>)
+                    : <p>No Movies</p>
+                }
+            </ul>
+
+            <button onClick={() => searchMovies(searchTerm)}></button>
         </>
     );
 }
