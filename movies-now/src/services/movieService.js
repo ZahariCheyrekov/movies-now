@@ -1,6 +1,8 @@
 const baseUrl = 'http://www.omdbapi.com?apikey=5c5d0828&s=';
 
-export const getMoviesByTitle = (title) =>
-    fetch(`${baseUrl}${title}`)
-        .then(res => res.json())
-        .then(data => console.log(data));
+export const getMoviesByTitle = async (title) => {
+    const res = await fetch(`${baseUrl}${title}`);
+    const data = await res.json();
+
+    return data.Search;
+}
