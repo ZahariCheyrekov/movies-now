@@ -12,6 +12,7 @@ const Movies = () => {
     const searchMovies = async (title) => {
         const moviesFromSearch = await getMoviesByTitle(title);
         setMovies(moviesFromSearch);
+    }
 
     return (
         <>
