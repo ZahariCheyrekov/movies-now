@@ -1,12 +1,17 @@
 .movie-card-element {
-    background-color: rgba(27, 25, 25, 0.868);
+    background-color: rgb(44, 42, 42);
     color: #ffff;
 
     margin: 30px auto;
-    width: 270px;
+    width: 280px;
     height: 450px;
 
     border-radius: 10px;
+    transition: 1s;
+}
+
+.movie-card-element:hover {
+    transform: scale(1.1);
 }
 
 .movie-card-element>img {
