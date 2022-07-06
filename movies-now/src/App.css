@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(15, 13, 13, 0.721);
+}
+
+#root {
+}
+
+.site-content {
+}
