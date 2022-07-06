@@ -1,8 +1,9 @@
 .movie-card-element {
     background-color: rgba(0, 0, 0, 0.963);
-    width: 250px;
-    height: 400px;
+    width: 270px;
+    height: 450px;
     color: #ffff;
+    margin: 30px auto;
 }
 
 .movie-card-element>img {
