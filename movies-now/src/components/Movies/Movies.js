@@ -5,7 +5,13 @@ const Movies = () => {
     const [movies, setMovies] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
 
-   
+    useEffect(() => {
+        setMovies(getMoviesByTitle(searchTerm).Search);
+    }, []);
+
+    const searchMovies = async (title) => {
+        const moviesFromSearch = await getMoviesByTitle(title);
+        setMovies(moviesFromSearch);
 
     return (
         <>
