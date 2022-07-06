@@ -1,8 +1,7 @@
 const MovieCard = ({ movie }) => {
     return (
         <li
-            id={movie.imdbID}
-            >
+            id={movie.imdbID}>
             {movie.Title}
         </li>
     )
