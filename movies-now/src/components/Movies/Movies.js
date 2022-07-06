@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { getMoviesByTitle } from '../../services/movieService';
 
 import MovieCard from './MovieCard';
+import './Movies.css';
 
 const Movies = () => {
     const [movies, setMovies] = useState([]);
@@ -27,7 +28,7 @@ const Movies = () => {
 
             <button onClick={() => searchMovies(searchTerm)}>Search</button>
 
-            <ul>
+            <ul className='movies-list'>
                 {movies
                     ? movies.map(movie => <MovieCard movie={movie} />)
                     : <li id='no-movies'>No Movies</li>
