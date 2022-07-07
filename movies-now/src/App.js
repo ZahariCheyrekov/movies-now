@@ -8,19 +8,26 @@ import Movies from './components/Movies';
 import CreateMovie from './components/CreateMovie';
 import Footer from './components/Footer';
 
+import NotificationContext from './contexts/notificationContext';
+import Notification from './components/Notification';
+
 function App() {
   return (
     <>
-      <Header />
+      <NotificationContext.Provider value={'a'}>
+        <Header />
 
-      <main>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/movies' element={<Movies />} />
-          <Route path='/create' element={<CreateMovie />} />
-        </Routes>
-      </main>
+        <main>
+          <Notification />
+          
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/movies' element={<Movies />} />
+            <Route path='/create' element={<CreateMovie />} />
+          </Routes>
+        </main>
 
+      </NotificationContext.Provider >
       <Footer />
     </>
   );
