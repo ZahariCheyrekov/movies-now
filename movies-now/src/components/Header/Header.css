@@ -1,8 +1,11 @@
 .site-header {
-    background-image: url('../../assets/theater.jpg');
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 1) 0,
+            rgba(0, 0, 0, 0.2) 60%,
+            rgba(0, 0, 0, 1) 100%),
+        url('../../assets/movies-collage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -200px;
     position: relative;
 
     width: 100%;
@@ -28,6 +31,7 @@
 .header-nav {
     display: flex;
     gap: 2rem;
+    height: 45px;
 }
 
 .header-nav>a {
@@ -35,11 +39,12 @@
     font-weight: bold;
     text-decoration: none;
     padding: 10px 0;
+    margin: 2px 0;
     letter-spacing: 1px;
 }
 
 .header-nav>a:hover {
-    border-bottom: 1px solid rgb(129, 2, 2);
+    border-bottom: 2px solid rgb(255, 0, 0);
 }
 
 .header-logo-section {
