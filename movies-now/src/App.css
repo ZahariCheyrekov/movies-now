@@ -13,3 +13,18 @@ body {
     margin: 0;
     padding: 0;
 }
+
+::-webkit-scrollbar {
+    width: 1rem;
+    background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(59, 59, 59);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-corner{
+    background-color: rgb(59, 59, 59);
+    border-radius: 1px;
+}
