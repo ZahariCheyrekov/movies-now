@@ -1,11 +1,22 @@
-import { createNewMovie } from '../../services/movieService';
 import './CreateMovie.css';
+
+import { createNewMovie } from '../../services/movieService';
+import { inputValidator } from '../../validators/inputValidator';
 
 const CreateMovie = () => {
     const onSubmitHandler = (ev) => {
         ev.preventDefault();
 
         const data = Object.fromEntries(new FormData(ev.currentTarget));
+
+        const isValid = inputValidator(data);
+
+        if (!isValid) {
+            alert('All fields are required!');
+            return;
+        }
+
+
         createNewMovie(data);
 
         ev.target.reset();
