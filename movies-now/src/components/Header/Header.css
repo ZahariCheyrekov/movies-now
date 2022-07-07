@@ -2,21 +2,17 @@
     background-image: url('../../assets/theater.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: -200px;
     position: relative;
 
     width: 100%;
-    height: 110vh;
-    margin-top: -20vh;
+    height: 90vh;
 }
 
 .header-logo-section {
     position: absolute;
-    background: rgba(0, 0, 0, 0);
-    justify-content: center;
     top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    width: 100%;
 }
 
 .header-logo-section {
