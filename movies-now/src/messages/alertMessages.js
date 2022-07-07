@@ -1,0 +1,1 @@
+export const ALL_FIELDS_ARE_REQUIRED_MESSAGE = 'All fields are required!';
