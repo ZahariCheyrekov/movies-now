@@ -10,8 +10,12 @@
     width: 400px;
     height: 400px;
     color: #ffffff;
-    background-color:  rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.88);
     border-radius: 14px;
 
-    padding: 20px;
+    padding: 10px 30px;
+}
+
+.create-movie-title {
+    letter-spacing: 1px;
 }
