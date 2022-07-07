@@ -39,9 +39,18 @@ const CreateMovie = () => {
                 ></textarea>
             </label>
 
-            <label htmlFor="buttons">
-                <input className="btn submit" type="submit" value="Clear" />
-                <input className="btn submit" type="submit" value="Create Movie" />
+            <label htmlFor="clear-btn">
+                <button type="submit" className="btn submit clr">
+                    Clear
+                    <i className="fa-solid fa-trash-can"></i>
+                </button>
+            </label>
+
+            <label htmlFor="create-btn">
+                <button type="submit" className="btn submit add-mv">
+                    Add Movie
+                    <i className="fa-solid fa-paper-plane"></i>
+                </button>
             </label>
         </form>
     );

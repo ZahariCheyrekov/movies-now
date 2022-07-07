@@ -63,3 +63,18 @@ label.description-m-label .description-movie {
 .btn.submit>i {
     padding-left: 10px;
 }
+
+.btn.submit.clr {
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+}
+
+.btn.submit.clr:hover {
+    background-color: rgb(117, 14, 14);
+}
+
+.btn.submit.add-mv:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
