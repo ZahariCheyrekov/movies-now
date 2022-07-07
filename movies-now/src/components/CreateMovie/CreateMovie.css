@@ -14,7 +14,7 @@
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 14px;
 
-    padding: 10px 30px 30px;
+    padding: 10px 30px;
 }
 
 .create-movie-form>label {
@@ -48,4 +48,18 @@ label.description-m-label {
 
 label.description-m-label .description-movie {
     resize: none;
+}
+
+.btn.submit {
+    height: 65%;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.5s;
+
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn.submit>i {
+    padding-left: 10px;
 }
