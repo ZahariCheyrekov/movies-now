@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.703), rgba(0, 0, 0, 0.616)), url('../src/assets/theater-background.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../public/assets/theater-background.jpg');
     background-repeat: no-repeat;
     object-fit: fill;
     background-size: cover;
