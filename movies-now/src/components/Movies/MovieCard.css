@@ -3,8 +3,7 @@
     color: #ffff;
 
     margin: 30px auto;
-    width: 280px;
-    height: 450px;
+    width: 300px;
 
     border-radius: 10px;
     transition: 0.5s;
@@ -17,7 +16,7 @@
 
 .movie-card-element>img {
     width: 100%;
-    height: 60%;
+    height: 70%;
     object-fit: fill;
 
     border-radius: 10px 10px 0 0;
