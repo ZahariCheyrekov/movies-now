@@ -9,11 +9,17 @@
     height: 90vh;
 }
 
-.header-logo-section {
-    position: absolute;
-    top: 0;
-    width: 100%;
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
+
+
 
 .header-logo-section {
     display: flex;
