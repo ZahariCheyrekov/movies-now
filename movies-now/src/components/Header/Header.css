@@ -19,7 +19,12 @@
     padding: 20px 0;
 }
 
-
+.header-nav>a {
+    color: #ffff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 16px;
+}
 
 .header-logo-section {
     display: flex;
