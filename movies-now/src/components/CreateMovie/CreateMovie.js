@@ -3,6 +3,8 @@ import './CreateMovie.css';
 import { createNewMovie } from '../../services/movieService';
 import { inputValidator } from '../../validators/inputValidator';
 
+import { ALL_FIELDS_ARE_REQUIRED_MESSAGE } from '../../messages/alertMessages';
+
 const CreateMovie = () => {
     const onSubmitHandler = (ev) => {
         ev.preventDefault();
@@ -12,7 +14,7 @@ const CreateMovie = () => {
         const isValid = inputValidator(data);
 
         if (!isValid) {
-            alert('All fields are required!');
+            alert(ALL_FIELDS_ARE_REQUIRED_MESSAGE);
             return;
         }
 
@@ -53,7 +55,7 @@ const CreateMovie = () => {
             </label>
 
             <label htmlFor="clear-btn">
-                <button type="submit" className="btn submit clr">
+                <button type="button" className="btn submit clr">
                     Clear
                     <i className="fa-solid fa-trash-can"></i>
                 </button>
