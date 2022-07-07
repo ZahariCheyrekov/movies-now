@@ -1,5 +1,5 @@
 .movie-card-element {
-    background-color: rgb(44, 42, 42);
+    background: linear-gradient(rgb(255, 9, 9), rgb(0, 0, 0));
     color: #ffff;
 
     margin: 30px auto;
@@ -24,7 +24,7 @@
 }
 
 .movie-card-title {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .mv-el {
@@ -32,8 +32,10 @@
     padding: 4px 10px;
 }
 
-.movie-card-type{
+.movie-card-type {
     font-size: 16px;
+
+    font-weight: normal;
 }
 
 .movie-card-year {
@@ -41,6 +43,7 @@
     bottom: 10px;
     left: 12px;
 
-    font-size: 14px;
+    font-weight: normal;
+    font-size: 16px;
     padding: 0;
 }
