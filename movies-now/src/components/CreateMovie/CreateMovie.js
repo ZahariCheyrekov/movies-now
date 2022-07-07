@@ -1,7 +1,12 @@
 import { createNewMovie } from '../../services/movieService';
 
 const CreateMovie = () => {
-   
+    const onSubmitHandler = (ev) => {
+        ev.preventDefault();
+
+        const data = Object.fromEntries(new FormData(ev.currentTarget));
+        createNewMovie(data);
+    }
 
     return (
         <form onSubmit={onSubmitHandler} id="create" method="POST">
