@@ -1,4 +1,5 @@
 import './MovieCard.css';
+import notFound from '../../assets/404.jpg';
 
 const MovieCard = ({ movie }) => {
     console.log(movie);
@@ -10,11 +11,11 @@ const MovieCard = ({ movie }) => {
             <img src={
                 movie.Poster !== 'N/A'
                     ? movie.Poster
-                    : 'https://miro.medium.com/max/1400/1*cLQUX8jM2bMdwMcV2yXWYA.jpeg'
+                    : notFound
             } />
 
             <h2 className="movie-card-title mv-el">{movie.Title}</h2>
-            <hr className='movie-hr'/>
+            <hr className='movie-hr' />
             <h3 className="movie-card-type mv-el">{movie.Type}</h3>
             <h3 className="movie-card-year mv-el">{movie.Year}</h3>
         </li>
