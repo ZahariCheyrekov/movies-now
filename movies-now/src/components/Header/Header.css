@@ -1,6 +1,25 @@
 .site-header {
-    width: 1200px;
+    background-image: url('../../assets/theater.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 
+    width: 100%;
+    height: 110vh;
+    margin-top: -20vh;
+}
+
+.header-logo-section {
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    justify-content: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.header-logo-section {
     display: flex;
     align-items: center;
     gap: 1rem;
