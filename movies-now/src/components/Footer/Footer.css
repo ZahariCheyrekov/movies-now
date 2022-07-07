@@ -1,5 +1,12 @@
 .site-footer {
-    padding: 10px 0;
     background-color: rgb(117, 14, 14);
     height: 12vh;
 }
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 34px 0;
+    height: 100%;
+}
+
