@@ -3,7 +3,7 @@
     color: #ffff;
 
     margin: 30px auto;
-    width: 300px;
+    width: 320px;
 
     border-radius: 10px;
     transition: 0.5s;
@@ -35,7 +35,7 @@
 
 .mv-el {
     margin: 0;
-    padding: 4px 8px 4px 12px;
+    padding: 4px 8px 4px 16px;
 }
 
 .movie-card-type {
@@ -47,7 +47,7 @@
 .movie-card-year {
     position: absolute;
     bottom: 10px;
-    left: 12px;
+    left: 16px;
 
     font-weight: normal;
     font-size: 16px;
