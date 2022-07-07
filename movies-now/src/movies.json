@@ -1,0 +1,146 @@
+{
+    "tt0372784": {
+        "title": "Batman Begins",
+        "type": "movie",
+        "year": "2005",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    },
+    "tt1877830": {
+        "title": "The Batman",
+        "type": "movie",
+        "year": "2022",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_SX300.jpg"
+    },
+    "tt0096895": {
+        "title": "Batman",
+        "type": "movie",
+        "year": "1989",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BZTM2NmZlOTEtYTI5NS00N2JjLWJkNzItMmZkNDBlYmQzNDA2XkEyXkFqcGdeQXVyMTAxODYyODI@._V1_SX300.jpg"
+    },
+    "tt0103776": {
+        "title": "Batman Returns",
+        "type": "movie",
+        "year": "1992",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BOGZmYzVkMmItM2NiOS00MDI3LWI4ZWQtMTg0YWZkODRkMmViXkEyXkFqcGdeQXVyODY0NzcxNw@@._V1_SX300.jpg"
+    },
+    "tt0118688": {
+        "title": "Batman & Robin",
+        "type": "movie",
+        "year": "1997",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMGQ5YTM1NmMtYmIxYy00N2VmLWJhZTYtN2EwYTY3MWFhOTczXkEyXkFqcGdeQXVyNTA2NTI0MTY@._V1_SX300.jpg"
+    },
+    "tt0112462": {
+        "title": "Batman Forever",
+        "type": "movie",
+        "year": "1995",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BNDdjYmFiYWEtYzBhZS00YTZkLWFlODgtY2I5MDE0NzZmMDljXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+    },
+    "tt4116284": {
+        "title": "The Lego Batman Movie",
+        "type": "movie",
+        "year": "2017",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_SX300.jpg"
+    },
+    "tt0103359": {
+        "title": "Batman: The Animated Series",
+        "type": "series",
+        "year": "1992–1995",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BOTM3MTRkZjQtYjBkMy00YWE1LTkxOTQtNDQyNGY0YjYzNzAzXkEyXkFqcGdeQXVyOTgwMzk1MTA@._V1_SX300.jpg"
+    },
+    "tt1569923": {
+        "title": "Batman: Under the Red Hood",
+        "type": "movie",
+        "year": "2010",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BNmY4ZDZjY2UtOWFiYy00MjhjLThmMjctOTQ2NjYxZGRjYmNlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+    },
+    "tt2705436": {
+        "title": "Italian Spiderman",
+        "type": "movie",
+        "year": "2007",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BYjFhN2RjZTctMzA2Ni00NzE2LWJmYjMtNDAyYTllOTkyMmY3XkEyXkFqcGdeQXVyNTA0OTU0OTQ@._V1_SX300.jpg"
+    },
+    "tt2084949": {
+        "title": "Superman, Spiderman or Batman",
+        "type": "movie",
+        "year": "2011",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjQ4MzcxNDU3N15BMl5BanBnXkFtZTgwOTE1MzMxNzE@._V1_SX300.jpg"
+    },
+    "tt1433184": {
+        "title": "Spiderman and Grandma",
+        "type": "movie",
+        "year": "2009",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjE3Mzg0MjAxMl5BMl5BanBnXkFtZTcwNjIyODg5Mg@@._V1_SX300.jpg"
+    },
+    "tt1132238": {
+        "title": "Fighting, Flying and Driving: The Stunts of Spiderman 3",
+        "type": "movie",
+        "year": "2007",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BNTI3NDE1ZmEtMTRiMS00YTY4LTk0OGItNjY4YmI0MDM4OGM4XkEyXkFqcGdeQXVyODE2NDgwMzM@._V1_SX300.jpg"
+    },
+    "tt5978586": {
+        "title": "Spiderman in Cannes",
+        "type": "movie",
+        "year": "2016",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BZDlmMGQwYmItNTNmOS00OTNkLTkxNTYtNDM3ZWVlMWUyZDIzXkEyXkFqcGdeQXVyMTA5Mzk5Mw@@._V1_SX300.jpg"
+    },
+    "tt2975590": {
+        "title": "Batman v Superman: Dawn of Justice",
+        "type": "movie",
+        "year": "2016",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+    },
+    "tt0348150": {
+        "title": "Superman Returns",
+        "type": "movie",
+        "year": "2006",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BNzY2ZDQ2MTctYzlhOC00MWJhLTgxMmItMDgzNDQwMDdhOWI2XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg"
+    },
+    "tt0078346": {
+        "title": "Superman",
+        "type": "movie",
+        "year": "1978",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMzA0YWMwMTUtMTVhNC00NjRkLWE2ZTgtOWEzNjJhYzNiMTlkXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg"
+    },
+    "tt0081573": {
+        "title": "Superman II",
+        "type": "movie",
+        "year": "1980",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BODk2NjgzNTEtYzZhZC00ZTBkLTllMGQtMmMxMzU1NDRkM2RlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg"
+    },
+    "tt0086393": {
+        "title": "Superman III",
+        "type": "movie",
+        "year": "1983",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMzI3ZDllMTctNmI2Mi00OGQ4LTk2ZTQtYTJhMjA5ZGI2YmRkXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg"
+    },
+    "tt0094074": {
+        "title": "Superman IV: The Quest for Peace",
+        "type": "movie",
+        "year": "1987",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMmIwZWY1YTYtNDlhOS00NDRmLWI4MzItNjk2NDc1N2NhYzNlXkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_SX300.jpg"
+    },
+    "tt18689424": {
+        "title": "Batman v Superman: Dawn of Justice Ultimate Edition",
+        "type": "movie",
+        "year": "2016",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BYzgyMTMzZjUtNGNjMy00NTJjLWIzNDYtMTc2YzQwOGE5MGM4XkEyXkFqcGdeQXVyMTUwODYzMjcw._V1_SX300.jpg"
+    },
+    "tt11192306": {
+        "title": "Superman & Lois",
+        "type": "series",
+        "year": "2021–",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BOGYyMmViMjgtZjViZi00NjkzLThjZGItMzZhYmZmOWZlMzdhXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg"
+    },
+    "tt1673430": {
+        "title": "Superman/Batman: Apocalypse",
+        "type": "movie",
+        "year": "2010",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMjk3ODhmNjgtZjllOC00ZWZjLTkwYzQtNzc1Y2ZhMjY2ODE0XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+    },
+    "tt0106057": {
+        "title": "Lois & Clark: The New Adventures of Superman",
+        "type": "series",
+        "year": "1993–1997",
+        "imageUrl": "https://m.media-amazon.com/images/M/MV5BZTU1ZGFjNzEtZWYzZC00ZmI0LTg2NmMtN2YyNTY4YzhlODIyXkEyXkFqcGdeQXVyMjExMjk0ODk@._V1_SX300.jpg"
+    }
+}
