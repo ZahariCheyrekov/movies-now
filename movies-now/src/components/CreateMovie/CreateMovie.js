@@ -7,6 +7,8 @@ const CreateMovie = () => {
 
         const data = Object.fromEntries(new FormData(ev.currentTarget));
         createNewMovie(data);
+
+        ev.target.reset();
     }
 
     return (
@@ -40,7 +42,7 @@ const CreateMovie = () => {
             </label>
 
             <label htmlFor="clear-btn">
-                <button type="submit" className="btn submit clr"> 
+                <button type="submit" className="btn submit clr">
                     Clear
                     <i className="fa-solid fa-trash-can"></i>
                 </button>
