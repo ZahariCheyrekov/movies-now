@@ -25,6 +25,10 @@
     word-spacing: 2px;
 }
 
+.header-nav {
+    display: flex;
+    gap: 2rem;
+}
 
 .header-nav>a {
     color: #ffff;
