@@ -11,7 +11,7 @@ const CreateMovie = () => {
 
     return (
         <form onSubmit={onSubmitHandler} className="create-movie-form" method="POST">
-                <h2>Create Movie</h2>
+                <h2 className="create-movie-title">Create Movie</h2>
 
                 <label htmlFor="movie-title">Title:</label>
                 <input type="text" className="title-movie" name="title" placeholder="Enter movie title" />
