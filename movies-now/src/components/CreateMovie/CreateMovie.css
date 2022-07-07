@@ -25,6 +25,12 @@
     font-size: 18px;
 }
 
+.create-movie-title {
+    letter-spacing: 1px;
+    width: 100%;
+    font-size: 30px;
+    margin: 10px 0;
+}
 
 .input-el-m {
     margin: 2px 0 10px;
