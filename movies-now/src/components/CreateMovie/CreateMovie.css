@@ -42,6 +42,15 @@
     outline: none;
 }
 
+.description-movie::-webkit-scrollbar {
+    width: 1em;
+    background-color: rgb(59, 59, 59);
+}
+
+.description-movie::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
 label.description-m-label {
     width: 100%;
 }
