@@ -3,12 +3,13 @@ import Header from './components/Header';
 
 import { Routes, Route } from 'react-router-dom';
 
-import CreateMovie from './components/CreateMovie';
 import Movies from './components/Movies';
+import CreateMovie from './components/CreateMovie';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="site-content">
+    <>
       <Header />
 
       <main>
@@ -18,7 +19,8 @@ function App() {
         </Routes>
       </main>
 
-    </div>
+      <Footer />
+    </>
   );
 }
 
