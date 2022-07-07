@@ -14,6 +14,7 @@ const MovieCard = ({ movie }) => {
             } />
 
             <h2 className="movie-card-title mv-el">{movie.Title}</h2>
+            <hr className='movie-hr'/>
             <h3 className="movie-card-type mv-el">{movie.Type}</h3>
             <h3 className="movie-card-year mv-el">{movie.Year}</h3>
         </li>
