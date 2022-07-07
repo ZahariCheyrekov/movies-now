@@ -8,9 +8,9 @@ const Header = () => {
         <header className="site-header">
             <div className='header-wrapper'>
                 <section className='header-logo-section'>
-                    <h1 className="header-title">
+                    <h2 className="header-title">
                         Movies Now
-                    </h1>
+                    </h2>
 
                     <article className="header-img-art">
                         <img src={popcornbag} />
