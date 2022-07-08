@@ -5,7 +5,7 @@ const EnjoySection = () => {
         <section className="explore-movies site-sec">
             <div className="explr-mv-wrapper">
                 <article className="explr-img-sec">
-                    <img src={laptop} />
+                    <img src={laptop} alt="laptop" />
                 </article>
 
                 <article className="explr-mv-content">

@@ -16,7 +16,7 @@ const ExploreSection = () => {
                 </article>
 
                 <article className="explr-img-sec">
-                    <img src={sonicImg} />
+                    <img src={sonicImg} alt="sonic" />
                 </article>
             </div>
         </section>
