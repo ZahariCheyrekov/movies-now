@@ -1,10 +1,11 @@
+import './EnjoySection.css';
 import laptop from '../../assets/laptop.png';
 
 const EnjoySection = () => {
     return (
         <section className="explore-movies site-sec">
-            <div className="explr-mv-wrapper">
-                <article className="explr-img-sec">
+            <div className="explr-mv-wrapper enj-sec">
+                <article className="explr-img-sec laptop-img">
                     <img src={laptop} alt="laptop" />
                 </article>
 
