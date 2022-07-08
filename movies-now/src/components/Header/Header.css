@@ -26,6 +26,7 @@
     font-size: 34px;
     letter-spacing: 1px;
     word-spacing: 2px;
+    color: #ffffff;
 }
 
 .header-nav {
@@ -51,10 +52,6 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-}
-
-.header-title {
-    color: #ffff;
 }
 
 .header-img-art {
