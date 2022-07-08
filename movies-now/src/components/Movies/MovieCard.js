@@ -12,7 +12,7 @@ const MovieCard = ({ movie }) => {
                 movie.Poster !== 'N/A'
                     ? movie.Poster
                     : notFound
-            } />
+            } alt="movie-poster" />
 
             <h2 className="movie-card-title mv-el">{movie.Title}</h2>
             <hr className='movie-hr' />
