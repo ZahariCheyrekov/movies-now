@@ -23,7 +23,7 @@ body {
     border-radius: 4px;
 }
 
-::-webkit-scrollbar-corner{
+::-webkit-scrollbar-corner {
     background-color: rgb(59, 59, 59);
     border-radius: 1px;
 }
