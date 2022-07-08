@@ -1,8 +1,11 @@
 .site-sec {
     height: 450px;
-    border-top: 10px solid rgb(59, 59, 59);
     border-bottom: 10px solid rgb(59, 59, 59);
     color: #ffffff;
+}
+
+.site-sec.fst-sc {
+    border-top: 10px solid rgb(59, 59, 59);
 }
 
 .explr-mv-wrapper {
