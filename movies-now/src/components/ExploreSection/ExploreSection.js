@@ -1,8 +1,9 @@
-import sonicImg from '../../assets/sonic.png'
+import './ExploreSection.css';
+import sonicImg from '../../assets/sonic.png';
 
 const ExploreSection = () => {
     return (
-        <section className="explore-movies">
+        <section className="explore-movies site-sec">
             <div className="explr-mv-wrapper">
                 <article className="explr-mv-title">
                     <h2 className="site-ttl-sec">
