@@ -19,7 +19,7 @@ const ExploreSection = () => {
                 </article>
             </div>
         </section>
-    )
+    );
 }
 
 export default ExploreSection;
