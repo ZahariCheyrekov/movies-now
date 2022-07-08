@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { getMoviesByTitle } from '../../services/movieService';
+import { getAllMovies, getMoviesByTitle } from '../../services/movieService';
 
 import MovieCard from './MovieCard';
 import './Movies.css';
@@ -10,8 +10,13 @@ const Movies = () => {
     const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
-        setMovies(getMoviesByTitle(searchTerm).Search);
-    }, [searchTerm]);
+        getMovies();
+    }, []);
+
+    const getMovies = async () => {
+        const moviesDb = await getAllMovies();
+        setMovies(Object.entries(moviesDb));
+    }
 
     const searchMovies = async (title) => {
         const moviesFromSearch = await getMoviesByTitle(title);
@@ -30,9 +35,10 @@ const Movies = () => {
 
             <ul className='movies-list'>
                 {movies
-                    ? movies.map(movie => <MovieCard movie={movie} />)
+                    ? movies.map(movie => < MovieCard id={movie[0]} movie={movie[1]} />)
                     : <li id='no-movies'>No Movies</li>
                 }
+                console.log(movie);
             </ul>
 
         </>
