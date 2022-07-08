@@ -42,12 +42,3 @@
     font-weight: normal;
 }
 
-.movie-card-year {
-    position: absolute;
-    bottom: 10px;
-    left: 16px;
-
-    font-weight: normal;
-    font-size: 16px;
-    padding: 0;
-}
