@@ -1,0 +1,14 @@
+.explr-img-sec.flm-flp-img {
+    width: 420px;
+    height: 280px;
+    position: relative;
+}
+
+.explr-img-sec.flm-flp-img>.popcorn-bag {
+    position: absolute;
+    top: -10px;
+    left: -50px;
+    width: 200px;
+    height: 260px;
+}
+
