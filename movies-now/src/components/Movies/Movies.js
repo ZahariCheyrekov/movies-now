@@ -11,7 +11,7 @@ const Movies = () => {
 
     useEffect(() => {
         setMovies(getMoviesByTitle(searchTerm).Search);
-    }, []);
+    }, [searchTerm]);
 
     const searchMovies = async (title) => {
         const moviesFromSearch = await getMoviesByTitle(title);
