@@ -17,7 +17,7 @@ const EnjoySection = () => {
                         Remember to have fun.
                     </h2>
                     <p className="site-p-sec">
-                        They are plenty of movies in the collection where you can
+                        There are plenty of movies in the collection where you can
                         search for the ones you love.
                     </p>
                 </article>
