@@ -18,9 +18,7 @@ const CreateMovie = () => {
             return;
         }
 
-
         createNewMovie(data);
-
         ev.target.reset();
     }
 
