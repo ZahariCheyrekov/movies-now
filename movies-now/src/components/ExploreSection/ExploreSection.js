@@ -3,7 +3,7 @@ import sonicImg from '../../assets/sonic.png';
 
 const ExploreSection = () => {
     return (
-        <section className="explore-movies site-sec">
+        <section className="explore-movies site-sec fst-sc">
             <div className="explr-mv-wrapper">
                 <article className="explr-mv-content">
                     <h2 className="site-ttl-sec">
