@@ -1,7 +1,7 @@
 .movie-card-element {
     color: #ffff;
 
-    margin: 30px auto;
+    margin: 40px auto;
     width: 220px;
     height: 320px;
 
@@ -16,11 +16,19 @@
     width: 100%;
     height: 100%;
     object-fit: fill;
-
-    border-radius: 10px ;
+    border-radius: 14px;
 }
 
 .movie-card-title {
-    font-size: 16px;
-    letter-spacing: 1px;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    width: 100%;
+    height: 2rem;
+    line-height: 1.2rem;
+    padding-top: 4px;
+    text-align: center;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
