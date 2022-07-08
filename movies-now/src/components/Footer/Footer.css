@@ -1,6 +1,9 @@
 .site-footer {
     background-color: rgb(0, 0, 0);
-    height: 12vh;
+    
+    position: absolute;
+    height: 16%;
+    width: 100%;
 }
 
 .footer-content {
