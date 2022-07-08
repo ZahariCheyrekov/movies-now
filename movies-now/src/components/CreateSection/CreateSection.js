@@ -1,3 +1,5 @@
+import filmFlap from '../../assets/film-flap.png';
+
 const CreateSection = () => {
     return (
         <section className="explore-movies site-sec">
