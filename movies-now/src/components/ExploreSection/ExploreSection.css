@@ -15,6 +15,12 @@
     align-items: center;
 }
 
+.explr-mv-content {
+    width: 50%;
+    line-height: 24px;
+}
+
+
 .explr-img-sec {
     width: 350px;
     height: 350px;
