@@ -20,7 +20,7 @@ const Movies = () => {
 
     const searchMovies = async (title) => {
         const moviesFromSearch = await getMoviesByTitle(title);
-        setMovies(moviesFromSearch);
+        // setMovies(moviesFromSearch);
     }
 
     return (
@@ -35,7 +35,13 @@ const Movies = () => {
 
             <ul className='movies-list'>
                 {movies
-                    ? movies.map(movie => < MovieCard key={movie[0]} id={movie[0]} movie={movie[1]} />)
+                    ? movies.map(movie =>
+                        <MovieCard
+                            key={movie[0]}
+                            id={movie[0]}
+                            movie={movie[1]}
+                        />
+                    )
                     : <li id='no-movies'>No Movies</li>
                 }
                 console.log(movie);
