@@ -1,4 +1,5 @@
 import './Home.css';
+import ExploreSection from '../ExploreSection/';
 
 const Home = () => {
     return (
@@ -7,7 +8,7 @@ const Home = () => {
                 Explore your favorite movies, shows and series.
             </h1>
 
-           
+            <ExploreSection />
         </>
     );
 }
