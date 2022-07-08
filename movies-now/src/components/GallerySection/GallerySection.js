@@ -6,14 +6,14 @@ import f9Img from '../../assets/f9.jpg';
 
 const GallerySection = () => {
     return (
-        <section className="explore-movies gallery-section" >
-            <div className="explr-mv-wrapper gallery-sec-wrapper">
+        <section className="explore-movies site-sec" >
+            <div className="explr-mv-wrapper enj-secr">
                 <article className="gallery-img-art">
                     <img src={shazamImg} className="gallery-img" alt="shazam" />
                 </article>
 
                 <article className="gallery-img-art">
-                    <img src={theMatrixImg} className="gallery-img" alt="the-matrix" />
+                    <img src={theMatrixImg} className="gallery-img scl" alt="the-matrix" />
                 </article>
 
                 <article className="gallery-img-art">
