@@ -10,4 +10,6 @@ export const getMoviesByTitle = async (title) => {
     return data.Search;
 }
 
+export const getAllMovies = () => requester.get(moviesUrl);
+
 export const createNewMovie = (data) => requester.post(moviesUrl, data);
