@@ -2,6 +2,7 @@ import './Home.css';
 
 import ExploreSection from '../ExploreSection';
 import EnjoySection from '../EnjoySection';
+import CreateSection from '../CreateSection';
 
 const Home = () => {
     return (
@@ -13,6 +14,8 @@ const Home = () => {
             <ExploreSection />
 
             <EnjoySection />
+
+            <CreateSection />
         </>
     );
 }
