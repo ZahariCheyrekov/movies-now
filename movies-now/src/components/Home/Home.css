@@ -1,8 +1,8 @@
 .home-title {
     position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
+    top: calc((750px - 3.5rem) / 2);
     left: 50%;
+    transform: translateX(-50%);
 
     max-width: 1200px;
     width: 68%;

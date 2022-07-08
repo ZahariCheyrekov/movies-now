@@ -1,11 +1,17 @@
 import './Header.css';
+
 import popcornBag from '../../assets/popcorn-bag.png';
+import moviesCollage from '../../assets/movies-collage.jpg'
 
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <header className="site-header">
+            <article className="mv-collage-img-art">
+                <img src={moviesCollage} alt="movie-collage" />
+            </article>
+
             <div className='header-wrapper'>
                 <section className='header-logo-section'>
                     <h2 className="header-title">
