@@ -21,7 +21,8 @@
 }
 
 .movie-card-title {
-    font-size: 17px;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
 .movie-hr {
@@ -31,7 +32,3 @@
     width: 90%;
 }
 
-.mv-el {
-    margin: 0;
-    padding: 4px 8px 4px 16px;
-}
