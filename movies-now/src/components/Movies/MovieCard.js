@@ -22,7 +22,7 @@ const MovieCard = ({
             {/* <hr className='movie-hr' /> */}
             {/* <h3 className="movie-card-type mv-el">{movie.type}</h3> */}
             {/* <h3 className="movie-card-year mv-el">{movie.year}</h3> */}
-            {/* <p className="movie-card-description">{movie.description}</p> */}
+            <p className="movie-card-description">{movie.description}</p>
         </li>
     )
 }
