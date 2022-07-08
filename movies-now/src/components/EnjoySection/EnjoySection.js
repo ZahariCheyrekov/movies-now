@@ -1,11 +1,11 @@
-import peopleImg from '../../assets/people-talking.png';
+import laptop from '../../assets/laptop.png';
 
 const EnjoySection = () => {
     return (
         <section className="explore-movies site-sec">
             <div className="explr-mv-wrapper">
                 <article className="explr-img-sec">
-                    <img src={peopleImg} />
+                    <img src={laptop} />
                 </article>
 
                 <article className="explr-mv-content">
@@ -13,8 +13,8 @@ const EnjoySection = () => {
                         Remember to have fun.
                     </h2>
                     <p className="site-p-sec">
-                      They are plenty of movies in the collection where you can
-                      search for the ones you love.
+                        They are plenty of movies in the collection where you can
+                        search for the ones you love.
                     </p>
                 </article>
             </div>
