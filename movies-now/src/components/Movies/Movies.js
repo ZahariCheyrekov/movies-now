@@ -30,7 +30,6 @@ const Movies = () => {
                     )
                     : <li id='no-movies'>No Movies</li>
                 }
-                console.log(movie);
             </ul>
 
         </>
