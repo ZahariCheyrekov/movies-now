@@ -1,3 +1,4 @@
+import './CreateSection.css';
 import filmFlap from '../../assets/film-flap.png';
 
 const CreateSection = () => {
