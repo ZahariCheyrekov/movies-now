@@ -1,5 +1,18 @@
 .site-sec {
     height: 450px;
+    border-top: 10px solid rgb(59, 59, 59);
+    border-bottom: 10px solid rgb(59, 59, 59);
+    color: #ffffff;
+}
+
+.explr-mv-wrapper {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .explr-img-sec {
