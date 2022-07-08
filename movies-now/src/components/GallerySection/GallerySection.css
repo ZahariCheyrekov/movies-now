@@ -3,7 +3,13 @@
     height: 250px;
 }
 
+article.gallery-img-art>img.gallery-img {
+    width: 100%;
+    height: 100%;
 
+    object-fit: cover;
+    border-radius: 4px;
+}
 
 .gallery-img.scl {
     transform: scale(1.2);
