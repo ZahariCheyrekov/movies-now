@@ -12,7 +12,7 @@ export const requester = async (method, url, data) => {
     try {
         const res = await fetch(url, options);
 
-        if (res.ok == false) {
+        if (res.ok === false) {
             throw new Error(res.statusText);
         }
 
