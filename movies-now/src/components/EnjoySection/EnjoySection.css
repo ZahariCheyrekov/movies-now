@@ -5,9 +5,20 @@
  .explr-img-sec.laptop-img {
      width: 420px;
      height: 260px;
+     position: relative;
  }
 
  .explr-img-sec.enj-sec>img {
      width: 100%;
      height: 100%;
+ }
+
+ .mv-now-img-abs {
+     position: absolute;
+     top: -6px;
+     left: 1px;
+     right: 0;
+     bottom: 1px;
+     border-radius: 2px;
+     transform: scale(0.746);
  }

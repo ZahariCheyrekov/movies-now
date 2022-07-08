@@ -1,5 +1,7 @@
 import './EnjoySection.css';
+
 import laptop from '../../assets/laptop.png';
+import moviesNowImg from '../../assets/movies-now-img.png'
 
 const EnjoySection = () => {
     return (
@@ -7,6 +9,7 @@ const EnjoySection = () => {
             <div className="explr-mv-wrapper enj-sec">
                 <article className="explr-img-sec laptop-img">
                     <img src={laptop} alt="laptop" />
+                    <img className="mv-now-img-abs" src={moviesNowImg} alt="Movies Now" />
                 </article>
 
                 <article className="explr-mv-content">
