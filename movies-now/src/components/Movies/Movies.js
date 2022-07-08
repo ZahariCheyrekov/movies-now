@@ -20,10 +20,6 @@ const Movies = () => {
 
     return (
         <>
-    
-
-            <button onClick={() => searchMovies(searchTerm)}>Search</button>
-
             <ul className='movies-list'>
                 {movies
                     ? movies.map(movie =>
