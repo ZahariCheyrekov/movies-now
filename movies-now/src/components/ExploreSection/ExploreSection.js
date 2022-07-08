@@ -1,3 +1,5 @@
+import sonicImg from '../../assets/sonic.png'
+
 const ExploreSection = () => {
     return (
         <section className="explore-movies">
@@ -13,7 +15,7 @@ const ExploreSection = () => {
                 </article>
 
                 <article className="explr-img-sec">
-                    <img />
+                    <img src={sonicImg} />
                 </article>
             </div>
         </section>
