@@ -12,7 +12,6 @@ const MovieCard = ({
             id={id}
             key={id}
         >
-
             <img src={
                 movie.imageUrl
                     ? movie.imageUrl
@@ -20,10 +19,10 @@ const MovieCard = ({
             } alt="movie-poster" />
 
             <h2 className="movie-card-title mv-el">{movie.title}</h2>
-            <hr className='movie-hr' />
-            <h3 className="movie-card-type mv-el">{movie.type}</h3>
-            <h3 className="movie-card-year mv-el">{movie.year}</h3>
-            <p className="movie-card-description">{movie.description}</p>
+            {/* <hr className='movie-hr' /> */}
+            {/* <h3 className="movie-card-type mv-el">{movie.type}</h3> */}
+            {/* <h3 className="movie-card-year mv-el">{movie.year}</h3> */}
+            {/* <p className="movie-card-description">{movie.description}</p> */}
         </li>
     )
 }
