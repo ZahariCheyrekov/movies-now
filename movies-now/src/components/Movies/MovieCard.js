@@ -1,13 +1,16 @@
 import './MovieCard.css';
 import notFound from '../../assets/404.jpg';
 
-const MovieCard = ({ key, id, movie }) => {
+const MovieCard = ({
+    id,
+    movie
+}) => {
     console.log(movie);
     return (
         <li
             className="movie-card-element"
             id={id}
-            key={key}
+            key={id}
         >
 
             <img src={
