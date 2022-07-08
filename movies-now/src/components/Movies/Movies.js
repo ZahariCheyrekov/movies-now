@@ -7,7 +7,7 @@ import './Movies.css';
 
 const Movies = () => {
     const [movies, setMovies] = useState([]);
-    
+
     useEffect(() => {
         getMovies();
     }, []);
