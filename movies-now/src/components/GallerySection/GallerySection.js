@@ -1,3 +1,5 @@
+import './GallerySection.css';
+
 import shazamImg from '../../assets/shazam.jpg';
 import theMatrixImg from '../../assets/the-matrix.jpg';
 import f9Img from '../../assets/f9.jpg';
