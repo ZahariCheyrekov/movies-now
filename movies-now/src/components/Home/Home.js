@@ -1,5 +1,7 @@
 import './Home.css';
-import ExploreSection from '../ExploreSection/';
+
+import ExploreSection from '../ExploreSection';
+import EnjoySection from '../EnjoySection';
 
 const Home = () => {
     return (
@@ -9,6 +11,8 @@ const Home = () => {
             </h1>
 
             <ExploreSection />
+
+            <EnjoySection />
         </>
     );
 }
