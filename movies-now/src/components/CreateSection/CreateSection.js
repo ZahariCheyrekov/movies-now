@@ -1,7 +1,7 @@
 import './CreateSection.css';
 
-import filmFlap from '../../assets/film-flap.png';
-import popcornBag from '../../assets/popcorn-bag.png';
+import laptop from '../../assets/laptop.png';
+import moviesNowImg from '../../assets/movies-now-img.png'
 
 const CreateSection = () => {
     return (
@@ -17,9 +17,9 @@ const CreateSection = () => {
                     </p>
                 </article>
 
-                <article className="explr-img-sec flm-flp-img">
-                    <img src={filmFlap} alt="film-flap" className="flm-flp" />
-                    <img src={popcornBag} alt="popcorn-bag" className="popcorn-bag" />
+                 <article className="explr-img-sec laptop-img">
+                    <img src={laptop} alt="laptop" />
+                    <img className="mv-now-img-abs" src={moviesNowImg} alt="Movies Now" />
                 </article>
             </div>
         </section>

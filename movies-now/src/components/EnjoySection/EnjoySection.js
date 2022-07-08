@@ -1,15 +1,15 @@
 import './EnjoySection.css';
 
-import laptop from '../../assets/laptop.png';
-import moviesNowImg from '../../assets/movies-now-img.png'
+import filmFlap from '../../assets/film-flap.png';
+import popcornBag from '../../assets/popcorn-bag.png';
 
 const EnjoySection = () => {
     return (
         <section className="explore-movies site-sec">
             <div className="explr-mv-wrapper enj-sec">
-                <article className="explr-img-sec laptop-img">
-                    <img src={laptop} alt="laptop" />
-                    <img className="mv-now-img-abs" src={moviesNowImg} alt="Movies Now" />
+                <article className="explr-img-sec flm-flp-img">
+                    <img src={filmFlap} alt="film-flap" className="flm-flp" />
+                    <img src={popcornBag} alt="popcorn-bag" className="popcorn-bag" />
                 </article>
 
                 <article className="explr-mv-content">
