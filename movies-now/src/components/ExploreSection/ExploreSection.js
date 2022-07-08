@@ -7,7 +7,7 @@ const ExploreSection = () => {
             <div className="explr-mv-wrapper">
                 <article className="explr-mv-content">
                     <h2 className="site-ttl-sec">
-                        Learn more about your favourite movies!
+                        Learn more about your favourite movies.
                     </h2>
                     <p className="site-p-sec">
                         A place to find information about new movies, shows and series.
