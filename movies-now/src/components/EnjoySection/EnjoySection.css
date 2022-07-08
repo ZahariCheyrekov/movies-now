@@ -1,0 +1,13 @@
+ .explr-mv-wrapper.enj-sec {
+     justify-content: space-between;
+ }
+
+ .explr-img-sec.laptop-img {
+     width: 420px;
+     height: 260px;
+ }
+
+ .explr-img-sec.enj-sec>img {
+     width: 100%;
+     height: 100%;
+ }
