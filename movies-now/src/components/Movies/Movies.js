@@ -7,8 +7,7 @@ import './Movies.css';
 
 const Movies = () => {
     const [movies, setMovies] = useState([]);
-    const [searchTerm, setSearchTerm] = useState('');
-
+    
     useEffect(() => {
         getMovies();
     }, []);
