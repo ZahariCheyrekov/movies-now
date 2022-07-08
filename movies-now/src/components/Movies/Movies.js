@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { getAllMovies, getMoviesByTitle } from '../../services/movieService';
+import { getAllMovies } from '../../services/movieService';
 
 import MovieCard from './MovieCard';
 import './Movies.css';
@@ -18,18 +18,9 @@ const Movies = () => {
         setMovies(Object.entries(moviesDb));
     }
 
-    const searchMovies = async (title) => {
-        const moviesFromSearch = await getMoviesByTitle(title);
-        // setMovies(moviesFromSearch);
-    }
-
     return (
         <>
-            <input
-                placeholder="Enter movie title"
-                value={searchTerm}
-                onChange={(ev) => setSearchTerm(ev.target.value)}>
-            </input>
+    
 
             <button onClick={() => searchMovies(searchTerm)}>Search</button>
 
