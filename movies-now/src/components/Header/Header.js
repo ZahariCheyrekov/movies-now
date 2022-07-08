@@ -1,5 +1,5 @@
 import './Header.css';
-import popcornbag from '../../assets/popcorn-bag.png';
+import popcornBag from '../../assets/popcorn-bag.png';
 
 import { Link } from 'react-router-dom';
 
@@ -13,7 +13,7 @@ const Header = () => {
                     </h2>
 
                     <article className="header-img-art">
-                        <img src={popcornbag} />
+                        <img src={popcornBag} alt="popcorn-bag" />
                     </article>
                 </section>
 

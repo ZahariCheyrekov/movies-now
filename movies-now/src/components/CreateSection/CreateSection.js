@@ -1,5 +1,7 @@
 import './CreateSection.css';
+
 import filmFlap from '../../assets/film-flap.png';
+import popcornBag from '../../assets/popcorn-bag.png';
 
 const CreateSection = () => {
     return (
@@ -16,7 +18,8 @@ const CreateSection = () => {
                 </article>
 
                 <article className="explr-img-sec flm-flp-img">
-                    <img src={filmFlap} alt="film-flap" />
+                    <img src={filmFlap} alt="film-flap" className="flm-flp" />
+                    <img src={popcornBag} alt="popcorn-bag" className="popcorn-bag" />
                 </article>
             </div>
         </section>
