@@ -1,3 +1,4 @@
+import './HeaderPoster.css';
 
 import moviesCollage from '../../assets/movies-collage.jpg'
 
