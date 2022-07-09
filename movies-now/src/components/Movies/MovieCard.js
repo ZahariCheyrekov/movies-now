@@ -1,13 +1,17 @@
 import './MovieCard.css';
+
 import notFound from '../../assets/404.jpg';
+import { getMovieCardById } from '../../services/movieService';
 
 const MovieCard = ({
     id,
     movie
 }) => {
 
-    const clickHandler = (ev) => {
+    const clickHandler = async (ev) => {
         const movieCardId = ev.currentTarget.id;
+        const movie = await getMovieCardById(movieCardId);
+        console.log(movie);
     }
 
     console.log(movie);
