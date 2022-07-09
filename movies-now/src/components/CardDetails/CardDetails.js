@@ -24,7 +24,7 @@ const CardDetails = () => {
                 <img src={movie.imageUrl} />
             </article>
 
-            <aside className="mv-card-details-info">
+            <section className="mv-card-details-info">
                 <h2 className="mv-card-ttl">
                     {movie.title}
                 </h2>
@@ -39,7 +39,7 @@ const CardDetails = () => {
                 <h4 className="mv-card-year">
                     {movie.year}
                 </h4>
-            </aside>
+            </section>
         </article>
     );
 }
