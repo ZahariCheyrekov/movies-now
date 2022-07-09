@@ -18,6 +18,8 @@ const CreateMovie = () => {
             return;
         }
 
+        data.likes = 0;
+        
         createNewMovie(data);
         ev.target.reset();
     }

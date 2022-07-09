@@ -1,11 +1,13 @@
 import './CardDetails.css';
 
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
-import { getMovieCardById } from '../../services/movieService';
+import { deleteMovie, getLikes, getMovieCardById, likeMovie } from '../../services/movieService';
 
 const CardDetails = () => {
+    let navigate = useNavigate();
+
     const { movieCardId } = useParams();
     const [movie, setMovie] = useState({});
 
@@ -16,6 +18,11 @@ const CardDetails = () => {
     const getMovie = async () => {
         const movieById = await getMovieCardById(movieCardId);
         setMovie(movieById);
+    }
+
+    const deleteMovieHandler = () => {
+        deleteMovie(movieCardId);
+        navigate('/movies');
     }
 
     return (
@@ -40,6 +47,11 @@ const CardDetails = () => {
                 <h4 className="mv-card-year dt-el">
                     {movie.year}
                 </h4>
+
+                <button onClick={deleteMovieHandler} className="dtls-del-btn">
+                    Delete
+                </button>
+
             </section>
         </article>
     );
