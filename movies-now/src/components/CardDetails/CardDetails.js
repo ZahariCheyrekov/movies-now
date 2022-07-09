@@ -21,7 +21,7 @@ const CardDetails = () => {
     return (
         <article className="movie-card-details">
             <article className="mv-card-img-d">
-                <img src={movie.imageUrl} />
+                <img src={movie.imageUrl} alt="Movie Poster" />
             </article>
 
             <section className="mv-card-details-info">
