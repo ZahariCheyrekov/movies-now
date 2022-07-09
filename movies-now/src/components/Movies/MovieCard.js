@@ -8,9 +8,6 @@ const MovieCard = ({
     id,
     movie
 }) => {
-
-
-    console.log(movie);
     return (
         <Link className="movie-card-link" to={`details/${id}`} >
             <li
