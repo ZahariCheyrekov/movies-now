@@ -26,4 +26,6 @@
 .mv-card-type.dt-el {
     margin-bottom: 20px;
     font-size: 22px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
 }
