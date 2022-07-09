@@ -5,7 +5,7 @@ const CardDetails = () => {
     console.log(paramas);
 
     return (
-        <div>
+        <div> 
 
         </div>
     );
