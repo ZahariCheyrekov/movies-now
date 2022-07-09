@@ -1,0 +1,25 @@
+.movie-card-details {
+    width: 1200px;
+    margin: 50px auto;
+    display: flex;
+
+    color: #ffffff;
+    border-radius: 14px;
+    border: 2px solid #ffffff;
+}
+
+.mv-card-img-d {
+    width: 400px;
+    height: 500px;
+}
+
+.mv-card-img-d>img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 13px 0 0 13px;
+}
+
+.mv-card-details-info {
+    flex-basis: 50%;
+}
