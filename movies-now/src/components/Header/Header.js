@@ -1,4 +1,5 @@
 import './Header.css';
+import React from 'react';
 
 import popcornBag from '../../assets/popcorn-bag.png';
 

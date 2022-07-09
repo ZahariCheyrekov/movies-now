@@ -4,6 +4,7 @@ import { getAllMovies } from '../../services/movieService';
 
 import MovieCard from './MovieCard';
 import './Movies.css';
+import React from 'react';
 
 const Movies = () => {
     const [movies, setMovies] = useState([]);

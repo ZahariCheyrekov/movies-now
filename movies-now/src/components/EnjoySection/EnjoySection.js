@@ -1,4 +1,5 @@
 import './EnjoySection.css';
+import React from 'react';
 
 import filmFlap from '../../assets/film-flap.png';
 import popcornBag from '../../assets/popcorn-bag.png';

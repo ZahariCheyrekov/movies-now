@@ -1,5 +1,6 @@
 import './CreateMovie.css';
 
+import React from 'react';
 import { createNewMovie } from '../../services/movieService';
 import { inputValidator } from '../../validators/inputValidator';
 

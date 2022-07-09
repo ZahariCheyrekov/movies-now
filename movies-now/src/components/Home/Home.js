@@ -1,4 +1,6 @@
 import './Home.css';
+import React from 'react';
+
 
 import ExploreSection from '../ExploreSection';
 import EnjoySection from '../EnjoySection';

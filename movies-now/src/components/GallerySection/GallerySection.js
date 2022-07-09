@@ -1,4 +1,5 @@
 import './GallerySection.css';
+import React from 'react';
 
 import shazamImg from '../../assets/shazam.jpg';
 import theMatrixImg from '../../assets/the-matrix.jpg';

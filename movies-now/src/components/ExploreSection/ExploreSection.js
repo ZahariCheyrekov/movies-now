@@ -1,5 +1,7 @@
 import './ExploreSection.css';
 import sonicImg from '../../assets/sonic.png';
+import React from 'react';
+
 
 const ExploreSection = () => {
     return (

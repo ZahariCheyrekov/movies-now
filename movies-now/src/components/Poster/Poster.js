@@ -1,4 +1,5 @@
 import './Poster.css';
+import React from 'react';
 
 import moviesCollage from '../../assets/movies-collage.jpg'
 

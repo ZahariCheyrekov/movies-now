@@ -1,4 +1,5 @@
 import './CreateSection.css';
+import React from 'react';
 
 import laptop from '../../assets/laptop.png';
 import moviesNowImg from '../../assets/movies-now-img.png'
