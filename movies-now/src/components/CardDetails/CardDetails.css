@@ -13,5 +13,12 @@
     height: 500px;
     object-fit: fill;
     border-radius: 20px;
-box-shadow: 0.5em 1em 1em rgb(64 64 70);
+    box-shadow: 0.5em 1em 1em rgb(64 64 70);
+}
+
+.mv-card-ttl {
+    font-size: 34px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
 }
