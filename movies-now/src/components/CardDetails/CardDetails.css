@@ -36,3 +36,8 @@
     line-height: 30px;
     margin-bottom: 40px;
 }
+
+.mv-card-year.dt-el{
+    font-size: 26px;
+    letter-spacing: 2px;
+}
