@@ -28,6 +28,8 @@
     padding: 10px 0;
     margin: 2px 0;
     letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: normal;
 }
 
 .header-nav>a:hover {
