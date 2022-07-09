@@ -68,6 +68,7 @@
 .mv-dtls-video {
     width: 1200px;
     margin: 50px auto;
+    
     display: flex;
     justify-content: center;
 }
