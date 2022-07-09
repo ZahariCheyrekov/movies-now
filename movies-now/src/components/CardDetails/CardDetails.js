@@ -1,5 +1,8 @@
+import './CardDetails.css';
+
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+
 import { getMovieCardById } from '../../services/movieService';
 
 const CardDetails = () => {
