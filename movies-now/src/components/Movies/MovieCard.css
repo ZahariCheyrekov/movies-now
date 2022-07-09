@@ -33,3 +33,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
+.movie-card-link {
+    text-decoration: none;
+}
