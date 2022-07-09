@@ -24,7 +24,13 @@ const Movies = () => {
 
     const toggleActive = (index) => changeState({ ...appState, activeObject: appState.objects[index] });
 
+    const toggleActiveStyles = (index) => {
+        if (appState.objects[index] !== appState.activeObject) {
+            return "mv-li-item";
+        }
 
+        return "mv-li-item actv"
+    }
 
     const getMoviesByGenre = async (genre) => {
         const moviesDb = await getAllMovies();
