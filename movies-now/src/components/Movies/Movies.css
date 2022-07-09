@@ -25,13 +25,9 @@
     font-size: 18px;
     padding-bottom: 6px;
     cursor: pointer;
-}
-
-.mv-li-item:hover {
-    border-bottom: 2px solid #ffffff;
+    color: rgb(76, 76, 76);
 }
 
 .mv-li-item.actv {
-    color: rgb(255, 0, 0);
-    border-bottom: 2px solid rgb(255, 0, 0);
+    color: #ffffff;
 }
