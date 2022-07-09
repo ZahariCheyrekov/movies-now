@@ -7,7 +7,8 @@ import './Movies.css';
 
 const Movies = () => {
     const [movies, setMovies] = useState([]);
-
+    const [genres] = useState(['All', 'Action', 'Adventure', 'Animation', 'Comedy', 'Fantasy', 'Horror']);
+  
     useEffect(() => {
         getMovies();
     }, []);
@@ -16,6 +17,9 @@ const Movies = () => {
         const moviesDb = await getAllMovies();
         setMovies(Object.entries(moviesDb));
     }
+
+
+
 
     const getMoviesByGenre = async (genre) => {
         const moviesDb = await getAllMovies();
@@ -35,48 +39,9 @@ const Movies = () => {
 
         setMovies(Object.values(moviesByCategory))
     }
-
     return (
         <>
-            <ul className="mv-genres-ul">
-                <li
-                    key={'All'}
-                    onClick={() => getMovies()}
-                    className="mv-li-item actv">
-                    All
-                </li>
-                <li
-                    key={'Action'}
-                    onClick={() => getMoviesByGenre('Action')}
-                    className="mv-li-item">
-                    Action
-                </li>
-                <li
-                    key={'Adventure'}
-                    onClick={() => getMoviesByGenre('Adventure')}
-                    className="mv-li-item">
-                    Adventure</li>
-                <li
-                    key={'Animation'}
-                    onClick={() => getMoviesByGenre('Animation')}
-                    className="mv-li-item">
-                    Animation</li>
-                <li
-                    key={'Comedy'}
-                    onClick={() => getMoviesByGenre('Comedy')}
-                    className="mv-li-item">
-                    Comedy</li>
-                <li
-                    key={'Fantasy'}
-                    onClick={() => getMoviesByGenre('Fantasy')}
-                    className="mv-li-item">
-                    Fantasy</li>
-                <li
-                    key={'Horror'}
-                    onClick={() => getMoviesByGenre('Horror')}
-                    className="mv-li-item">
-                    Horror</li>
-            </ul>
+           
 
             <ul className='movies-list'>
                 {movies
@@ -90,7 +55,6 @@ const Movies = () => {
                     : <li id='no-movies'>No Movies</li>
                 }
             </ul>
-
         </>
     );
 }
