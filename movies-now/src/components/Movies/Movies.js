@@ -22,6 +22,7 @@ const Movies = () => {
         setMovies(Object.entries(moviesDb));
     }
 
+    const toggleActive = (index) => changeState({ ...appState, activeObject: appState.objects[index] });
 
 
 
