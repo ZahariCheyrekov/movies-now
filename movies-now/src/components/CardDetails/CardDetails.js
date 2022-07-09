@@ -1,13 +1,23 @@
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { getMovieCardById } from '../../services/movieService';
 
 const CardDetails = () => {
-    let paramas = useParams();
-    console.log(paramas);
+    const { movieCardId } = useParams();
+    const [movie, setMovie] = useState({});
+
+    useEffect(() => {
+        getMovie();
+    }, []);
+
+    const getMovie = async () => {
+        const movieById = await getMovieCardById(movieCardId);
+        setMovie(movieById);
+    }
 
     return (
-        <div> 
-
-        </div>
+        <article className="movie-card-details">
+        </article>
     );
 }
 
