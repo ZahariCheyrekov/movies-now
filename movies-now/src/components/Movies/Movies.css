@@ -21,3 +21,17 @@
     margin-top: 40px;
 }
 
+.mv-li-item {
+    font-size: 18px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+
+.mv-li-item:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.mv-li-item.actv {
+    color: rgb(255, 0, 0);
+    border-bottom: 2px solid rgb(255, 0, 0);
+}

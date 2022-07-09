@@ -19,6 +19,14 @@ const Movies = () => {
 
     return (
         <>
+            <ul className="mv-genres-ul">
+                <li className="mv-li-item actv">Action</li>
+                <li className="mv-li-item">Adventure</li>
+                <li className="mv-li-item">Animation</li>
+                <li className="mv-li-item">Comedy</li>
+                <li className="mv-li-item">Fantasy</li>
+                <li className="mv-li-item">Horror</li>
+            </ul>
             <ul className='movies-list'>
                 {movies
                     ? movies.map(movie =>
