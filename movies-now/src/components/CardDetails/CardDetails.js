@@ -24,19 +24,19 @@ const CardDetails = () => {
                 <img src={movie.imageUrl} alt="Movie Poster" />
             </article>
 
-            <section className="mv-card-details-info">
+            <section className="mv-card-details-info dt-el">
                 <h2 className="mv-card-ttl">
                     {movie.title}
                 </h2>
-                <h3 className="mv-card-type">
+                <h3 className="mv-card-type dt-el">
                     {movie.type}
                 </h3>
 
-                <p className="mv-card-description">
+                <p className="mvs-card-description dt-el" >
                     {movie.description}
                 </p>
 
-                <h4 className="mv-card-year">
+                <h4 className="mv-card-year dt-el">
                     {movie.year}
                 </h4>
             </section>
