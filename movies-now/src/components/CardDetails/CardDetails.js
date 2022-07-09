@@ -32,6 +32,7 @@ const CardDetails = () => {
                     {movie.type}
                 </h3>
 
+                <h3 className="mv-card-overview">Overview</h3>
                 <p className="mvs-card-description dt-el" >
                     {movie.description}
                 </p>

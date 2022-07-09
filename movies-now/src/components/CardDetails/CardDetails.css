@@ -17,27 +17,34 @@
 }
 
 .mv-card-ttl {
-    font-size: 34px;
+    font-size: 40px;
     text-align: center;
     letter-spacing: 1px;
-    margin-bottom: 40px;
 }
 
 .mv-card-type.dt-el {
-    margin-bottom: 20px;
+    margin: 30px 0;
     font-size: 24px;
+    font-weight: normal;
     letter-spacing: 1px;
     word-spacing: 2px;
     text-align: center;
 }
 
-.mvs-card-description.dt-el{
+.mv-card-overview {
+    margin: 20px 0;
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.mvs-card-description.dt-el {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 40px;
 }
 
-.mv-card-year.dt-el{
+.mv-card-year.dt-el {
     font-size: 26px;
     letter-spacing: 2px;
 }
