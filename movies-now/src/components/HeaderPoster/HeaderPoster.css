@@ -1,0 +1,23 @@
+.mv-collage-img-art {
+    position: relative;
+    z-index: -10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 730px;
+
+
+}
+
+.mv-collage-img-art>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 1) 0,
+            rgba(0, 0, 0, 0.3) 60%,
+            rgba(0, 0, 0, 1) 100%)
+}
