@@ -25,7 +25,14 @@
 
 .mv-card-type.dt-el {
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 24px;
     letter-spacing: 1px;
     word-spacing: 2px;
+    text-align: center;
+}
+
+.mvs-card-description.dt-el{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 40px;
 }
