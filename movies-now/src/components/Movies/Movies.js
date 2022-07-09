@@ -50,9 +50,25 @@ const Movies = () => {
 
         setMovies(Object.values(moviesByCategory))
     }
+
     return (
         <>
-           
+            <ul className="mv-genres-ul">
+                {appState.objects.map((_, index) => (
+                    <li
+                        key={index}
+                        className={toggleActiveStyles(index)}
+                        onClick={async () => {
+                            index === 0
+                                ? getMovies()
+                                : getMoviesByGenre(genres[index]);
+
+                            toggleActive(index);
+                        }}
+                    >{genres[index]}
+                    </li>
+                ))}
+            </ul>
 
             <ul className='movies-list'>
                 {movies
