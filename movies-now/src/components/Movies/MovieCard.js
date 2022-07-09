@@ -27,6 +27,7 @@ const MovieCard = ({
                 {/* <h3 className="movie-card-year mv-el">{movie.year}</h3> */}
                 {/* <p className="movie-card-description">{movie.description}</p> */}
             </li >
+            
         </Link>
     )
 }

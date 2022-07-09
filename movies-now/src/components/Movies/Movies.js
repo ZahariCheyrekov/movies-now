@@ -83,6 +83,8 @@ const Movies = () => {
                     : <li id='no-movies'>No Movies</li>
                 }
             </ul>
+            <div>
+            </div>
         </>
     );
 }

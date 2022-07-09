@@ -57,7 +57,16 @@ const CardDetails = () => {
                 </section>
             </article>
 
-        
+            <section className="mv-dtls-video">
+                {movie.trailerUrl
+                    ? <ReactPlayer
+                        url={movie.trailerUrl}
+                    />
+                    : <h2 style={{ color: "white" }}>
+                        No trailer
+                    </h2>
+                }
+            </section>
         </>
     );
 }
