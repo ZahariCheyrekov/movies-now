@@ -3,7 +3,6 @@ import './Header.css';
 import popcornBag from '../../assets/popcorn-bag.png';
 
 import { Link } from 'react-router-dom';
-import HeaderPoster from '../HeaderPoster/HeaderPoster';
 
 const Header = () => {
     return (
