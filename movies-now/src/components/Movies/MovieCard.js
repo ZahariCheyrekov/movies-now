@@ -5,9 +5,14 @@ const MovieCard = ({
     id,
     movie
 }) => {
+
+    const clickHandler = (ev) => {
+        const movieCardId = ev.currentTarget.id;
+    }
+
     console.log(movie);
     return (
-        <li
+        <li onClick={clickHandler}
             className="movie-card-element"
             id={id}
             key={id}
