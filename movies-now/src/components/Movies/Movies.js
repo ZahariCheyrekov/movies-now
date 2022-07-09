@@ -15,6 +15,7 @@ const Movies = () => {
 
     useEffect(() => {
         getMovies();
+        toggleActive(0);
     }, []);
 
     const getMovies = async () => {
