@@ -1,32 +1,12 @@
+import React from 'react';
+
 import './CreateMovie.css';
 
-import React from 'react';
-import { createNewMovie } from '../../services/movieService';
-import { inputValidator } from '../../validators/inputValidator';
 
-import { ALL_FIELDS_ARE_REQUIRED_MESSAGE } from '../../messages/alertMessages';
 
 const CreateMovie = () => {
-    const onSubmitHandler = (ev) => {
-        ev.preventDefault();
-
-        const data = Object.fromEntries(new FormData(ev.currentTarget));
-
-        const isValid = inputValidator(data);
-
-        if (!isValid) {
-            alert(ALL_FIELDS_ARE_REQUIRED_MESSAGE);
-            return;
-        }
-
-        data.likes = 0;
-
-        createNewMovie(data);
-        ev.target.reset();
-    }
-
     return (
-        <form onSubmit={onSubmitHandler} className="create-movie-form" method="POST">
+        <form onSubmit={createMovieHandler} className="create-movie-form" method="POST">
             <h2 className="create-movie-title">Create Movie</h2>
 
             <label htmlFor="movie-title" className="title-m-label">Title:
