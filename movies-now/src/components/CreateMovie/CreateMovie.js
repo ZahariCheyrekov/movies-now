@@ -3,6 +3,7 @@ import React from 'react';
 import './CreateMovie.css';
 
 import { createMovieHandler } from '../../handlers/createMovieHandler';
+import { clearFieldsHandler } from '../../handlers/clearFieldsHandler';
 
 const CreateMovie = () => {
     return (
@@ -34,7 +35,6 @@ const CreateMovie = () => {
                     placeholder="https://www.youtube.com/watch..." />
             </label>
 
-
             <label htmlFor="movie-description" className="description-m-label">Description:
                 <textarea name="description" className="description-movie input-el-m"
                     placeholder="Sonic the Hedgehog 2 is a 2022 action-adventure comedy film based on..."
@@ -42,7 +42,7 @@ const CreateMovie = () => {
             </label>
 
             <label htmlFor="clear-btn">
-                <button type="button" className="btn submit clr">
+                <button onClick={clearFieldsHandler} type="button" className="btn submit clr">
                     Clear
                     <i className="fa-solid fa-trash-can"></i>
                 </button>
