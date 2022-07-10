@@ -26,7 +26,10 @@
     cursor: pointer;
 }
 
-
+.genre-options>i {
+    padding-right: 12px;
+    font-size: 14px;
+}
 
 
 .mv-genres-ul {
@@ -38,11 +41,6 @@
 
 
 
-
-.genre-options>i {
-    padding-right: 12px;
-    font-size: 14px;
-}
 
 .mv-genres-ul {
     position: absolute;
