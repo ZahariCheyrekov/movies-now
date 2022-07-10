@@ -8,6 +8,8 @@ import useGenre from '../../hooks/useGenre';
 import { getAllMovies } from '../../services/movieService';
 
 import { toggleActiveStyle } from '../../utils/genreUtil';
+import { getMoviesByGenre } from '../../utils/movieUtil';
+import MovieList from './MovieList/MovieList';
 
 const Movies = () => {
     const genres = useGenre();
@@ -22,20 +24,6 @@ const Movies = () => {
     const getMovies = async () => {
         const moviesDb = await getAllMovies();
         setMovies(Object.entries(moviesDb));
-    }
-
-    const getMoviesByGenre = async (genre) => {
-        const moviesDb = await getAllMovies();
-
-        const moviesByCategory = [];
-        Object.entries(moviesDb).forEach(movie => {
-            const movieGenres = Object.values(movie[1])[5];
-
-            if (movieGenres.toUpperCase().includes(genre.toUpperCase())) {
-                moviesByCategory.push(movie);
-            }
-        });
-        setMovies(Object.values(moviesByCategory));
     }
 
     return (
@@ -54,12 +42,15 @@ const Movies = () => {
                                     <li
                                         key={genre}
                                         className={toggleActiveStyle(selected, genre)}
-                                        onClick={() => {
+                                        onClick={async () => {
                                             setSelected(genre);
 
-                                            genre === 'All'
-                                                ? getMovies()
-                                                : getMoviesByGenre(genre);
+                                            if (genre === 'All') {
+                                                getMovies();
+                                            } else {
+                                                const movies = await getMoviesByGenre(genre);
+                                                setMovies(movies);
+                                            }
                                         }}
                                     >{genre}
                                     </li>
@@ -70,7 +61,7 @@ const Movies = () => {
                 </div>
             </div>
 
-            <ul className='movies-list'>
+            {/* <ul className='movies-list'>
                 {movies
                     ? movies.map(movie =>
                         <MovieCard
@@ -81,7 +72,9 @@ const Movies = () => {
                     )
                     : <li id='no-movies'>No Movies</li>
                 }
-            </ul>
+            </ul> */}
+
+            <MovieList movies={movies} />
         </>
     );
 }
