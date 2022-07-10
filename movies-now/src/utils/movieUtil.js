@@ -1,5 +1,7 @@
 import { getAllMovies } from '../services/movieService';
 
+// TODO: Refactor!!!
+
 export const getMoviesByGenre = async (genre) => {
     const moviesDb = await getAllMovies();
 
