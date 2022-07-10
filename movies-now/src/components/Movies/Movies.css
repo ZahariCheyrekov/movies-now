@@ -27,3 +27,23 @@
     color: #ffffff;
 }
 
+.genre-options {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 220px;
+    padding: 8px 0 8px 12px;
+    letter-spacing: 1px;
+    font-size: 18px;
+
+    background-color: rgb(43, 43, 43);
+    color: #ffffff;
+
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+}

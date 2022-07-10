@@ -8,10 +8,12 @@ import React from 'react';
 
 const Movies = () => {
     const [movies, setMovies] = useState([]);
-    const [genres] = useState(['All', 'Action', 'Adventure', 'Animation', 'Biography', 'Comedy', 'Criminal', 'Drama', 'Family', 'Fantasy', 'Horror']);
+    const [isActive, setIsActive] = useState(false);
+    const [selected, setSelected] = useState('All');
+    const [genres] = useState(['All', 'Action', 'Adventure', 'Animation', 'Biography', 'Comedy', 'Criminal', 'Drama', 'Family', 'Fantasy', 'Horror', 'Mystery', 'Romance']);
     const [appState, changeState] = useState({
         activeObject: null,
-        objects: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }, { id: 8 }, { id: 9 }, { id: 10 }, { id: 11 }]
+        objects: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }, { id: 8 }, { id: 9 }, { id: 10 }, { id: 11 }, { id: 12 }, { id: 13 }]
     });
 
     useEffect(() => {
@@ -55,22 +57,35 @@ const Movies = () => {
 
     return (
         <>
-            <ul className="mv-genres-ul">
-                {appState.objects.map((_, index) => (
-                    <li
-                        key={index}
-                        className={toggleActiveStyles(index)}
-                        onClick={async () => {
-                            index === 0
-                                ? getMovies()
-                                : getMoviesByGenre(genres[index]);
+            <div className="container">
+                <div className="dropdown">
+                    <section className="genre-options" onClick={() => setIsActive(!isActive)}>
+                        {selected}
+                        <i className="fa-solid fa-caret-down"></i>
+                        {isActive &&
+                            <ul className="mv-genres-ul">
+                                {appState.objects.map((_, index) => (
+                                    <li
+                                        key={index}
+                                        className={toggleActiveStyles(index)}
+                                        value={genres[index]}
+                                        onClick={async () => {
+                                            setSelected(genres[index]);
 
-                            toggleActive(index);
-                        }}
-                    >{genres[index]}
-                    </li>
-                ))}
-            </ul>
+                                            index === 0
+                                                ? getMovies()
+                                                : getMoviesByGenre(genres[index]);
+
+                                            toggleActive(index);
+                                        }}
+                                    >{genres[index]}
+                                    </li>
+                                ))}
+                            </ul>
+                        }
+                    </section>
+                </div>
+            </div>
 
             <ul className='movies-list'>
                 {movies
