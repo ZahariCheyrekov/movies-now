@@ -20,7 +20,7 @@ const CreateMovie = () => {
         }
 
         data.likes = 0;
-        
+
         createNewMovie(data);
         ev.target.reset();
     }
@@ -48,6 +48,12 @@ const CreateMovie = () => {
                 <input type="text" className="imageUrl-movie input-el-m" name="imageUrl"
                     placeholder="https://dx35vtwkllhj9.cloudfront.net..." />
             </label>
+
+            <label htmlFor="movie-trailer" className="trailer-m-label">Trailer url:
+                <input type="text" className="trailerUrl-movie input-el-m" name="trailerUrl"
+                    placeholder="https://www.youtube.com/watch..." />
+            </label>
+
 
             <label htmlFor="movie-description" className="description-m-label">Description:
                 <textarea name="description" className="description-movie input-el-m"
