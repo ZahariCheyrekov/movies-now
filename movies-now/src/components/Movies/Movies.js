@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Movies.css';
+
 import { useState, useEffect } from 'react';
 
 import { getAllMovies } from '../../services/movieService';
@@ -27,6 +29,13 @@ const Movies = () => {
             <MovieBox />
 
             <div className="container">
+                <form className="search-mv-ttl-form">
+                    <label htmlFor="movie-title" className="title-movie-srch-lable">
+                        <input type="text" className="title-mv-srch" name="title"
+                            placeholder="Enter movie title" />
+                    </label>
+                </form>
+
                 <section className="genre-options"
                     onClick={() => setIsActive(!isActive)}
                 >
