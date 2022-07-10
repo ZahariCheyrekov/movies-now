@@ -41,14 +41,10 @@ const Movies = () => {
 
         const moviesByCategory = [];
         Object.entries(moviesDb).forEach(movie => {
-            const movieData = Object.values(movie[1]);
+            const movieGenres = Object.values(movie[1])[5];
 
-            for (const value of movieData) {
-                if (typeof value === 'string') {
-                    if (value.includes(genre)) {
-                        moviesByCategory.push(movie);
-                    }
-                }
+            if (movieGenres.toUpperCase().includes(genre.toUpperCase())) {
+                moviesByCategory.push(movie);
             }
         });
 
