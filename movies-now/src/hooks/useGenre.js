@@ -15,7 +15,8 @@ const useGenre = () => {
         'Horror',
         'Mystery',
         'Romance',
-        'Science Fiction'
+        'Science Fiction',
+        'Thriller'
     ]);
 
     return genres;
