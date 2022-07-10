@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const useGenres = () => {
+const useGenre = () => {
     const [genres] = useState([
         'All',
         'Action',
@@ -21,4 +21,4 @@ const useGenres = () => {
     return genres;
 }
 
-export default useGenres;
+export default useGenre;
