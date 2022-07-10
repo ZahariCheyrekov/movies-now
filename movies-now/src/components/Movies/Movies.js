@@ -1,5 +1,4 @@
 import React from 'react';
-import './Movies.css';
 
 import { useState, useEffect } from 'react';
 
