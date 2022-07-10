@@ -10,10 +10,10 @@ const Movies = () => {
     const [movies, setMovies] = useState([]);
     const [isActive, setIsActive] = useState(false);
     const [selected, setSelected] = useState('All');
-    const [genres] = useState(['All', 'Action', 'Adventure', 'Animation', 'Biography', 'Comedy', 'Criminal', 'Drama', 'Family', 'Fantasy', 'Horror', 'Mystery', 'Romance']);
+    const [genres] = useState(['All', 'Action', 'Adventure', 'Animation', 'Biography', 'Comedy', 'Criminal', 'Drama', 'Family', 'Fantasy', 'Horror', 'Mystery', 'Romance', 'Science Fiction']);
     const [appState, changeState] = useState({
         activeObject: null,
-        objects: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }, { id: 8 }, { id: 9 }, { id: 10 }, { id: 11 }, { id: 12 }, { id: 13 }]
+        objects: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }, { id: 8 }, { id: 9 }, { id: 10 }, { id: 11 }, { id: 12 }, { id: 13 }, { id: 14 }]
     });
 
     useEffect(() => {
