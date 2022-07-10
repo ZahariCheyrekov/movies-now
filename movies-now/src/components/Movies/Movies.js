@@ -9,6 +9,7 @@ import { getAllMovies } from '../../services/movieService';
 import MovieBox from '../MovieBox/MovieBox';
 import MovieGenres from './MovieGenres/MovieGenres';
 import MovieList from './MovieList/MovieList';
+import { getMoviesByTitle } from '../../utils/movieUtil';
 
 const Movies = () => {
     const [movies, setMovies] = useState([]);
@@ -18,6 +19,8 @@ const Movies = () => {
     useEffect(() => {
         getMovies();
     }, []);
+
+ 
 
     const getMovies = async () => {
         const moviesDb = await getAllMovies();
@@ -32,7 +35,14 @@ const Movies = () => {
                 <form className="search-mv-ttl-form">
                     <label htmlFor="movie-title" className="title-movie-srch-lable">
                         <input type="text" className="title-mv-srch" name="title"
-                            placeholder="Enter movie title" />
+                            placeholder="Title" />
+                        <i className="fa-solid fa-magnifying-glass"
+                            onClick={(ev) => {
+                                const value = ev.target.previousSibling.value;
+                                moviesByTitle(value);
+                            }}
+                        >
+                        </i>
                     </label>
                 </form>
 
