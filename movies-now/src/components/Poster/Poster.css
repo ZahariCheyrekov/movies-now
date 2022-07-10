@@ -1,12 +1,13 @@
 .mv-collage-img-art {
-    position: relative;
-    z-index: -10;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.9)),
+        url('../../assets/movies-collage.jpg');
+        
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
     height: 660px;
 }
 
