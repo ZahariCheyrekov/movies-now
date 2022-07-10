@@ -1,15 +1,14 @@
 .container {
-    position: relative;
     width: 1200px;
     margin: 60px auto 40px;
     padding-bottom: 4px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .genre-options {
-    position: absolute;
-    right: 0;
-    z-index: 10;
-
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +33,7 @@
 .mv-genres-ul {
     position: absolute;
     left: 0;
-    top: -3px;
+    top: 9px;
     z-index: 10;
     overflow-y: auto;
     list-style: none;
