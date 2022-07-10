@@ -1,26 +1,21 @@
+import React from 'react';
+import './Movies.css';
+
 import { useState, useEffect } from 'react';
 import useGenre from '../../hooks/useGenre';
 
 import { getAllMovies } from '../../services/movieService';
 
 import MovieCard from './MovieCard';
-import './Movies.css';
-import React from 'react';
 
 const Movies = () => {
     const genres = useGenre();
     const [movies, setMovies] = useState([]);
     const [isActive, setIsActive] = useState(false);
     const [selected, setSelected] = useState('All');
-    const [appState, changeState] = useState({
-        activeObject: null,
-        objects: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }, { id: 8 }, { id: 9 }
-            , { id: 10 }, { id: 11 }, { id: 12 }, { id: 13 }, { id: 14 }, { id: 15 }, { id: 16 }]
-    });
 
     useEffect(() => {
         getMovies();
-        toggleActive(0);
     }, []);
 
     const getMovies = async () => {
@@ -28,14 +23,11 @@ const Movies = () => {
         setMovies(Object.entries(moviesDb));
     }
 
-    const toggleActive = (index) => changeState({ ...appState, activeObject: appState.objects[index] });
-
-    const toggleActiveStyles = (index) => {
-        if (appState.objects[index] !== appState.activeObject) {
-            return "mv-li-item";
+    const toggleActiveStyles = (genre) => {
+        if (selected === genre) {
+            return "mv-li-item actv"
         }
-
-        return "mv-li-item actv"
+        return "mv-li-item";
     }
 
     const getMoviesByGenre = async (genre) => {
@@ -49,34 +41,33 @@ const Movies = () => {
                 moviesByCategory.push(movie);
             }
         });
-
-        setMovies(Object.values(moviesByCategory))
+        setMovies(Object.values(moviesByCategory));
     }
 
     return (
         <>
             <div className="container">
                 <div className="dropdown">
-                    <section className="genre-options" onClick={() => setIsActive(!isActive)}>
+                    <section className="genre-options"
+                        onClick={() => setIsActive(!isActive)}
+                    >
                         {selected}
                         <i className="fa-solid fa-caret-down"></i>
+
                         {isActive &&
                             <ul className="mv-genres-ul">
-                                {appState.objects.map((_, index) => (
+                                {genres.map(genre => (
                                     <li
-                                        key={index}
-                                        className={toggleActiveStyles(index)}
-                                        value={genres[index]}
-                                        onClick={async () => {
-                                            setSelected(genres[index]);
+                                        key={genre}
+                                        className={toggleActiveStyles(genre)}
+                                        onClick={() => {
+                                            setSelected(genre);
 
-                                            index === 0
+                                            genre === 'All'
                                                 ? getMovies()
-                                                : getMoviesByGenre(genres[index]);
-
-                                            toggleActive(index);
+                                                : getMoviesByGenre(genre);
                                         }}
-                                    >{genres[index]}
+                                    >{genre}
                                     </li>
                                 ))}
                             </ul>
@@ -97,8 +88,6 @@ const Movies = () => {
                     : <li id='no-movies'>No Movies</li>
                 }
             </ul>
-            <div>
-            </div>
         </>
     );
 }
