@@ -35,19 +35,18 @@ const Movies = () => {
             <MovieBox />
 
             <div className="container">
-                <form className="search-mv-ttl-form">
-                    <label htmlFor="movie-title" className="title-movie-srch-lable">
-                        <input type="text" className="title-mv-srch" name="title"
-                            placeholder="Title" />
-                        <i className="fa-solid fa-magnifying-glass"
-                            onClick={(ev) => {
-                                const value = ev.target.previousSibling.value;
-                                searchMovies(value);
-                            }}
-                        >
-                        </i>
-                    </label>
-                </form>
+                <label htmlFor="movie-title" className="title-movie-srch-lable">
+                    <input type="text" className="title-mv-srch" name="title"
+                        placeholder="Title" />
+                    <i className="fa-solid fa-magnifying-glass"
+                        onClick={(ev) => {
+                            ev.preventDefault();
+                            const value = ev.target.previousSibling.value;
+                            searchMovies(value);
+                        }}
+                    >
+                    </i>
+                </label>
 
                 <section className="genre-options"
                     onClick={() => setIsActive(!isActive)}
