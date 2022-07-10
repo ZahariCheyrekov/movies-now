@@ -61,19 +61,6 @@ const Movies = () => {
                 </div>
             </div>
 
-            {/* <ul className='movies-list'>
-                {movies
-                    ? movies.map(movie =>
-                        <MovieCard
-                            key={movie[0]}
-                            id={movie[0]}
-                            movie={movie[1]}
-                        />
-                    )
-                    : <li id='no-movies'>No Movies</li>
-                }
-            </ul> */}
-
             <MovieList movies={movies} />
         </>
     );
