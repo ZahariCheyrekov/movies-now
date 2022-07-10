@@ -1,12 +1,13 @@
 import React from 'react';
 import './Movies.css';
+import MovieCard from '../MovieCard';
 
 import { useState, useEffect } from 'react';
 import useGenre from '../../hooks/useGenre';
 
 import { getAllMovies } from '../../services/movieService';
 
-import MovieCard from '../MovieCard';
+import { toggleActiveStyle } from '../../utils/genreUtil';
 
 const Movies = () => {
     const genres = useGenre();
@@ -21,13 +22,6 @@ const Movies = () => {
     const getMovies = async () => {
         const moviesDb = await getAllMovies();
         setMovies(Object.entries(moviesDb));
-    }
-
-    const toggleActiveStyles = (genre) => {
-        if (selected === genre) {
-            return "mv-li-item actv"
-        }
-        return "mv-li-item";
     }
 
     const getMoviesByGenre = async (genre) => {
@@ -59,7 +53,7 @@ const Movies = () => {
                                 {genres.map(genre => (
                                     <li
                                         key={genre}
-                                        className={toggleActiveStyles(genre)}
+                                        className={toggleActiveStyle(selected, genre)}
                                         onClick={() => {
                                             setSelected(genre);
 
