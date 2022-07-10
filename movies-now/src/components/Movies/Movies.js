@@ -8,7 +8,7 @@ import React from 'react';
 
 const Movies = () => {
     const [movies, setMovies] = useState([]);
-    const [genres] = useState(['All', 'Action', 'Adventure', 'Animation', 'Comedy', 'Fantasy', 'Horror']);
+    const [genres] = useState(['All', 'Action', 'Adventure', 'Animation', 'Comedy', 'Criminal', 'Fantasy', 'Horror']);
     const [appState, changeState] = useState({
         activeObject: null,
         objects: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }]
