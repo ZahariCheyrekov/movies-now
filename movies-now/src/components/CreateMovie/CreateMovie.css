@@ -53,10 +53,11 @@ label.description-m-label {
 
 label.description-m-label .description-movie {
     resize: none;
+    height: 100px;
 }
 
 .btn.submit {
-    height: 65%;
+    height: 100%;
     cursor: pointer;
     border-radius: 4px;
     transition: 0.5s;
