@@ -47,3 +47,7 @@
     border-radius: 4px 4px 0 0;
     cursor: pointer;
 }
+
+.container {
+    padding-bottom: 4px;
+}
