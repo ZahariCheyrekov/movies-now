@@ -6,7 +6,7 @@ import useGenre from '../../hooks/useGenre';
 
 import { getAllMovies } from '../../services/movieService';
 
-import MovieCard from './MovieCard';
+import MovieCard from '../MovieCard';
 
 const Movies = () => {
     const genres = useGenre();
