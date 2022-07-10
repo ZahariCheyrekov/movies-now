@@ -14,7 +14,7 @@ const MovieList = ({ movies }) => {
                         movie={movie[1]}
                     />
                 )
-                : <li id="no-movies">No Movies</li>
+                : <li className="no-movies">No Movies</li>
             }
         </ul>
     );
