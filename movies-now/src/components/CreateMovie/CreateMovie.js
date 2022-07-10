@@ -2,7 +2,7 @@ import React from 'react';
 
 import './CreateMovie.css';
 
-
+import { createMovieHandler } from '../../handlers/createMovieHandler';
 
 const CreateMovie = () => {
     return (
