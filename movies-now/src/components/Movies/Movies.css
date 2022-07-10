@@ -11,22 +11,19 @@
 }
 
 .mv-genres-ul {
-    width: 1200px;
-    margin: 0 auto;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    color: #ffffff;
     margin-top: 40px;
+    list-style: none;
+    color: #ffffff;
 }
 
 .mv-li-item {
     font-size: 18px;
-    padding-bottom: 6px;
     cursor: pointer;
-    color: rgb(76, 76, 76);
+    color: rgb(135, 135, 135);
+    padding: 8px 0 8px 12px;
 }
 
 .mv-li-item.actv {
     color: #ffffff;
 }
+
