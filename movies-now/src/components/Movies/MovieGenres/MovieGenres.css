@@ -4,16 +4,7 @@
     color: #ffffff;
 }
 
-.mv-li-item {
-    font-size: 18px;
-    cursor: pointer;
-    color: rgb(135, 135, 135);
-    padding: 8px 0 8px 12px;
-}
 
-.mv-li-item.actv {
-    color: #ffffff;
-}
 
 .genre-options {
     position: absolute;
@@ -60,6 +51,17 @@
 
     background-color: rgb(59, 59, 59);
     border-radius: 0 0 4px 4px;
+}
+
+.mv-li-item {
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(135, 135, 135);
+    padding: 8px 0 8px 12px;
+}
+
+.mv-li-item.actv {
+    color: #ffffff;
 }
 
 .mv-li-item:hover {
