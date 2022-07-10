@@ -16,6 +16,7 @@ const useGenre = () => {
         'Mystery',
         'Romance',
         'Science Fiction',
+        'Supernatural',
         'Thriller'
     ]);
 
