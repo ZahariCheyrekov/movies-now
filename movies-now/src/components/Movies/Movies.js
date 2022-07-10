@@ -4,8 +4,9 @@ import { useState, useEffect } from 'react';
 
 import { getAllMovies } from '../../services/movieService';
 
-import MovieList from './MovieList/MovieList';
+import MovieBox from '../MovieBox/MovieBox';
 import MovieGenres from './MovieGenres/MovieGenres';
+import MovieList from './MovieList/MovieList';
 
 const Movies = () => {
     const [movies, setMovies] = useState([]);
@@ -23,6 +24,8 @@ const Movies = () => {
 
     return (
         <>
+            <MovieBox />
+
             <div className="container">
                 <section className="genre-options"
                     onClick={() => setIsActive(!isActive)}
