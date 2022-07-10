@@ -1,6 +1,8 @@
 import React from 'react';
 import useGenre from '../../../hooks/useGenre';
 
+import './MovieGenres.css';
+
 import { toggleActiveStyle } from '../../../utils/genreUtil';
 import { getMoviesByGenre } from '../../../utils/movieUtil';
 
