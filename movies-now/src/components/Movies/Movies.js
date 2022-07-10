@@ -20,7 +20,10 @@ const Movies = () => {
         getMovies();
     }, []);
 
- 
+    const searchMovies = async (title) => {
+        const moviesByTitle = await getMoviesByTitle(title);
+        setMovies(moviesByTitle);
+    }
 
     const getMovies = async () => {
         const moviesDb = await getAllMovies();
@@ -39,7 +42,7 @@ const Movies = () => {
                         <i className="fa-solid fa-magnifying-glass"
                             onClick={(ev) => {
                                 const value = ev.target.previousSibling.value;
-                                moviesByTitle(value);
+                                searchMovies(value);
                             }}
                         >
                         </i>

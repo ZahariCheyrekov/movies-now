@@ -14,3 +14,18 @@ export const getMoviesByGenre = async (genre) => {
 
     return Object.values(moviesByCategory);
 }
+
+export const getMoviesByTitle = async (title) => {
+    const moviesDb = await getAllMovies();
+
+    const moviesByTitle = [];
+    Object.entries(moviesDb).forEach(movie => {
+        const movieTitle = Object.values(movie[1])[3];
+
+        if (movieTitle.toUpperCase().includes(title.toUpperCase())) {
+            moviesByTitle.push(movie);
+        }
+    });
+
+    return Object.values(moviesByTitle);
+}
