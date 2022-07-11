@@ -23,10 +23,7 @@ const CardDetails = () => {
         setMovie(movieById);
     }
 
-    const deleteMovieHandler = () => {
-        deleteMovie(movieCardId);
-        navigate('/movies');
-    }
+   
 
     return (
         <>
