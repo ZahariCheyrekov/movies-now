@@ -22,7 +22,7 @@ const CardDetails = () => {
 
         setTimeout(() => {
             setLoading(false);
-        }, 250);
+        }, 500);
 
         getMovie();
     }, []);
