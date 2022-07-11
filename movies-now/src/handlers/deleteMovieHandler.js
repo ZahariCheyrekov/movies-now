@@ -1,4 +1,7 @@
+import { deleteMovie } from '../services/movieService';
+
 export const deleteMovieHandler = () => {
     deleteMovie(movieCardId);
-    navigate('/movies');
+    console.log('Hi');
+    // navigate('/movies');
 }
