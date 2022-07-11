@@ -10,7 +10,7 @@ const Spinner = () => {
             display: "flex",
             width: "100px",
             height: "80vh",
-            fill: "red"
+            fill: "#ffffff"
         });
     }, []);
 
