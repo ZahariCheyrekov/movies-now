@@ -8,14 +8,22 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 import { getMovieCardById } from '../../services/movieService';
 import { deleteMovieHandler } from '../../handlers/deleteMovieHandler';
+import Spinner from '../Spinner/Spinner';
 
 const CardDetails = () => {
     let navigate = useNavigate();
 
+    const [loading, setLoading] = useState(false);
     const { movieCardId } = useParams();
     const [movie, setMovie] = useState({});
 
     useEffect(() => {
+        setLoading(true);
+
+        setTimeout(() => {
+            setLoading(false);
+        }, 500);
+
         getMovie();
     }, []);
 
@@ -26,45 +34,50 @@ const CardDetails = () => {
 
     return (
         <>
-            <article className="movie-card-details">
-                <article className="mv-card-img-d">
-                    <img src={movie.imageUrl} alt="Movie Poster" />
-                </article>
+            {loading
+                ? <Spinner />
+                : <>
+                    <article className="movie-card-details">
+                        <article className="mv-card-img-d">
+                            <img src={movie.imageUrl} alt="Movie Poster" />
+                        </article>
 
-                <section className="mv-card-details-info dt-el">
-                    <h2 className="mv-card-ttl">
-                        {movie.title}
-                    </h2>
-                    <h3 className="mv-card-type dt-el">
-                        {movie.type}
-                    </h3>
+                        <section className="mv-card-details-info dt-el">
+                            <h2 className="mv-card-ttl">
+                                {movie.title}
+                            </h2>
+                            <h3 className="mv-card-type dt-el">
+                                {movie.type}
+                            </h3>
 
-                    <h3 className="mv-card-overview">Overview</h3>
-                    <p className="mvs-card-description dt-el" >
-                        {movie.description}
-                    </p>
+                            <h3 className="mv-card-overview">Overview</h3>
+                            <p className="mvs-card-description dt-el" >
+                                {movie.description}
+                            </p>
 
-                    <h4 className="mv-card-year dt-el">
-                        {movie.year}
-                    </h4>
+                            <h4 className="mv-card-year dt-el">
+                                {movie.year}
+                            </h4>
 
-                    <button onClick={() => deleteMovieHandler(movieCardId, navigate)} className="dtls-del-btn">
-                        Delete
-                    </button>
+                            <button onClick={() => deleteMovieHandler(movieCardId, navigate)} className="dtls-del-btn">
+                                Delete
+                            </button>
 
-                </section>
-            </article>
+                        </section>
+                    </article>
 
-            <section className="mv-dtls-video">
-                {movie.trailerUrl
-                    ? <ReactPlayer
-                        url={movie.trailerUrl}
-                    />
-                    : <h2 style={{ color: "white" }}>
-                        No trailer
-                    </h2>
-                }
-            </section>
+                    <section className="mv-dtls-video">
+                        {movie.trailerUrl
+                            ? <ReactPlayer
+                                url={movie.trailerUrl}
+                            />
+                            : <h2 style={{ color: "white" }}>
+                                No trailer
+                            </h2>
+                        }
+                    </section>
+                </>
+            }
         </>
     );
 }
