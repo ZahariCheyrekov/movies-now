@@ -48,7 +48,7 @@ const CardDetails = () => {
                         {movie.year}
                     </h4>
 
-                    <button onClick={deleteMovieHandler} className="dtls-del-btn">
+                    <button onClick={() => deleteMovieHandler(movieCardId, navigate)} className="dtls-del-btn">
                         Delete
                     </button>
 
