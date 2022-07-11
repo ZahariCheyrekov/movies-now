@@ -1,12 +1,13 @@
 import './CardDetails.css';
 
 import React from 'react';
-
 import ReactPlayer from 'react-player/youtube';
+
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
-import { deleteMovie, getMovieCardById } from '../../services/movieService';
+import { getMovieCardById } from '../../services/movieService';
+import { deleteMovieHandler } from '../../handlers/deleteMovieHandler';
 
 const CardDetails = () => {
     let navigate = useNavigate();
@@ -22,8 +23,6 @@ const CardDetails = () => {
         const movieById = await getMovieCardById(movieCardId);
         setMovie(movieById);
     }
-
-   
 
     return (
         <>
