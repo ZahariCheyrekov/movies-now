@@ -1,1 +1,1 @@
-export const DELETE_MOVIE_CONFIRM_MESSAGE = 'Do you want to delet this movie?';
+export const DELETE_MOVIE_CONFIRM_MESSAGE = 'Do you want to delete this movie?';
