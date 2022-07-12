@@ -23,6 +23,7 @@ const Header = () => {
                     <Link to="/">Home</Link>
                     <Link to="/movies">Movies</Link>
                     <Link to="/create">Create Movie</Link>
+                    <Link to="/login">Login</Link>
                 </nav>
             </div>
         </header>
