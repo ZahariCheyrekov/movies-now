@@ -44,7 +44,7 @@ const CardDetails = () => {
 
                         <section className="mv-card-details-info dt-el">
                             <h2 className="mv-card-ttl">
-                                {movie.title}
+                                {movie.title} ({movie.year})
                             </h2>
                             <h3 className="mv-card-type dt-el">
                                 {movie.type}
@@ -54,10 +54,6 @@ const CardDetails = () => {
                             <p className="mvs-card-description dt-el" >
                                 {movie.description}
                             </p>
-
-                            <h4 className="mv-card-year dt-el">
-                                {movie.year}
-                            </h4>
 
                             <button onClick={() => deleteMovieHandler(movieCardId, navigate)} className="dtls-del-btn">
                                 Delete
