@@ -7,10 +7,10 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Movies from './components/Movies';
 import CreateMovie from './components/CreateMovie';
-import Footer from './components/Footer';
 import CardDetails from './components/CardDetails';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+import Footer from './components/Footer';
 
 function App() {
   return (
