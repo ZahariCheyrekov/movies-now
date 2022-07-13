@@ -10,6 +10,7 @@ import CreateMovie from './components/CreateMovie';
 import Footer from './components/Footer';
 import CardDetails from './components/CardDetails';
 import Login from './components/Login/Login';
+import Register from './components/Register/Register';
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/movies' element={<Movies />} />
           <Route path='/create' element={<CreateMovie />} />
-          <Route path='/movies/details/:movieCardId' element={<CardDetails />} /> 
-          <Route path='/login' element={<Login />} /> 
+          <Route path='/movies/details/:movieCardId' element={<CardDetails />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
         </Routes>
       </main>
 
