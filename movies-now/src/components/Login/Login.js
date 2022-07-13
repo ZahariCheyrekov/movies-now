@@ -1,39 +1,16 @@
 import { useState } from 'react';
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { auth } from '../../firebase-config';
+import { login, logout } from '../../services/userService';
 
 const Login = () => {
     const [user, setUser] = useState({});
     const [loginEmail, setLoginEmail] = useState('');
     const [loginPassword, setLoginPassword] = useState('');
-    const [registerEmail, setRegisterEmail] = useState('');
-    const [registerPassword, setRegisterPassword] = useState('');
 
     onAuthStateChanged(auth, (currentUser) => {
         setUser(currentUser);
     });
-
-    const login = async () => {
-        try {
-            const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
-            console.log(user);
-        } catch (error) {
-            console.log(error.message);
-        }
-    }
-
-    const logout = async () => {
-        await signOut(auth);
-    }
-
-    const register = async () => {
-        try {
-            const user = await createUserWithEmailAndPassword(auth, registerEmail, registerPassword);
-            console.log(user);
-        } catch (error) {
-            console.log(error.message);
-        }
-    }
 
     return (
         <>
@@ -48,20 +25,7 @@ const Login = () => {
                     onChange={(ev) => setLoginPassword(ev.target.value)}
                 />
 
-                <button onClick={login}>Login</button>
-            </div>
-
-            <div >
-                <h3>Register</h3>
-                <input
-                    placeholder="Email..."
-                    onChange={(ev) => setRegisterEmail(ev.target.value)}
-                />
-                <input placeholder="Password..."
-                    onChange={(ev) => setRegisterPassword(ev.target.value)}
-                />
-
-                <button onClick={() => register()}>Register</button>
+                <button onClick={() => login(loginEmail, loginPassword)}>Login</button>
             </div>
 
             <button onClick={logout}>Logout</button>
