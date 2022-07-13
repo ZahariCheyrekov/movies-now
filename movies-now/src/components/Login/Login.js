@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { UserContext } from '../../contexts/UserContext';
 
 import { login } from '../../services/userService';
 
@@ -6,6 +7,7 @@ const Login = ({ setUser }) => {
     const [loginEmail, setLoginEmail] = useState('');
     const [loginPassword, setLoginPassword] = useState('');
 
+    
     return (
         <>
             <div >
