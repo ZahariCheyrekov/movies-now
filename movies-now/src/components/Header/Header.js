@@ -1,20 +1,15 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import './Header.css';
 
 import popcornBag from '../../assets/popcorn-bag.png';
 
-import { onAuthStateChanged } from 'firebase/auth';
-import { auth } from '../../firebase-config';
+import { logout } from '../../services/userService';
+import { UserContext } from '../../contexts/UserContext';
 
 const Header = () => {
-    const [user, setUser] = useState({});
-
-    onAuthStateChanged(auth, (currentUser) => {
-        setUser(currentUser);
-        console.log(currentUser)
-    });
+    const user = useContext(UserContext);
 
     return (
         <header className="site-header">
@@ -34,31 +29,19 @@ const Header = () => {
                     <Link to="/movies">Movies</Link>
 
                     {user
-                        ? userLinks()
-                        : guestLinks()
+                        ? <>
+                            <Link to="/create">Create Movie</Link>
+                            <Link onClick={logout} to="/">Logout</Link>
+                        </>
+                        : <>
+                            <Link to="/login">Login</Link>
+                            <Link to="/register">Register</Link>
+                        </>
                     }
                 </nav>
             </div>
         </header>
     );
-}
-
-const userLinks = () => {
-    return (
-        <>
-            <Link to="/create">Create Movie</Link>
-            <Link to="/logout">Logout</Link>
-        </>
-    )
-}
-
-const guestLinks = () => {
-    return (
-        <>
-            <Link to="/login">Login</Link>
-            <Link to="/register">Register</Link>
-        </>
-    )
 }
 
 export default Header;
