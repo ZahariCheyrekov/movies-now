@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { login } from '../../services/userService';
 
-const Login = () => {
+const Login = ({ setUser }) => {
     const [loginEmail, setLoginEmail] = useState('');
     const [loginPassword, setLoginPassword] = useState('');
 
@@ -19,7 +19,7 @@ const Login = () => {
                     onChange={(ev) => setLoginPassword(ev.target.value)}
                 />
 
-                <button onClick={() => login(loginEmail, loginPassword)}>Login</button>
+                <button onClick={() => login(loginEmail, loginPassword, setUser)}>Login</button>
             </div>
         </>
     )
