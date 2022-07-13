@@ -19,3 +19,6 @@ export const register = async (registerEmail, registerPassword) => {
     }
 }
 
+export const logout = async () => {
+    await signOut(auth);
+}
