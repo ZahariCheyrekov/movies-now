@@ -24,10 +24,11 @@ const Header = () => {
                     <Link to="/movies">Movies</Link>
                     <Link to="/create">Create Movie</Link>
                     <Link to="/login">Login</Link>
+                    <Link to="/register">Register</Link>
                 </nav>
             </div>
         </header>
-    )
+    );
 }
 
 export default Header;
