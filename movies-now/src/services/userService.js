@@ -10,5 +10,12 @@ export const login = async (loginEmail, loginPassword) => {
     }
 }
 
-
+export const register = async (registerEmail, registerPassword) => {
+    try {
+        const user = await createUserWithEmailAndPassword(auth, registerEmail, registerPassword);
+        console.log(user);
+    } catch (error) {
+        console.log(error.message);
+    }
+}
 
