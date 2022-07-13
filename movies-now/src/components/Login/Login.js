@@ -1,5 +1,4 @@
-import { useContext, useState } from 'react';
-import { UserContext } from '../../contexts/UserContext';
+import { useState } from 'react';
 
 import { login } from '../../services/userService';
 
@@ -7,7 +6,6 @@ const Login = ({ setUser }) => {
     const [loginEmail, setLoginEmail] = useState('');
     const [loginPassword, setLoginPassword] = useState('');
 
-    
     return (
         <>
             <div >
@@ -21,7 +19,7 @@ const Login = ({ setUser }) => {
                     onChange={(ev) => setLoginPassword(ev.target.value)}
                 />
 
-                <button onClick={() => login(loginEmail, loginPassword, setUser)}>Login</button>
+                <button onClick={() => login(loginEmail, loginPassword)}>Login</button>
             </div>
         </>
     )
