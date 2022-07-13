@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import './Header.css';
 
 import popcornBag from '../../assets/popcorn-bag.png';
-import { getUser } from '../../services/userService';
+
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../../firebase-config';
-
 
 const Header = () => {
     const [user, setUser] = useState({});
