@@ -1,16 +1,10 @@
 import { useState } from 'react';
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
-import { auth } from '../../firebase-config';
-import { login, logout } from '../../services/userService';
+
+import { login } from '../../services/userService';
 
 const Login = () => {
-    const [user, setUser] = useState({});
     const [loginEmail, setLoginEmail] = useState('');
     const [loginPassword, setLoginPassword] = useState('');
-
-    onAuthStateChanged(auth, (currentUser) => {
-        setUser(currentUser);
-    });
 
     return (
         <>
@@ -27,10 +21,6 @@ const Login = () => {
 
                 <button onClick={() => login(loginEmail, loginPassword)}>Login</button>
             </div>
-
-            <button onClick={logout}>Logout</button>
-
-            <h1>{user?.email} ({user?.accessToken})</h1>
         </>
     )
 }
