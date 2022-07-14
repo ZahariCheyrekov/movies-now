@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import './Register.css';
 
 import { register } from '../../services/userService';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Register = () => {
+    let navigate = useNavigate();
+
     const [registerEmail, setRegisterEmail] = useState('');
     const [registerPassword, setRegisterPassword] = useState('');
     const [repeatPassword, setRepeatPassword] = useState('');
@@ -65,7 +67,7 @@ const Register = () => {
             />
 
             <button
-                onClick={() => register(registerEmail, registerPassword, repeatPassword)}
+                onClick={(ev) => register(registerEmail, registerPassword, repeatPassword, ev, navigate)}
                 className="registerbtn frm-el red-btn">
                 Register
             </button>
