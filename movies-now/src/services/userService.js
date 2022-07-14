@@ -13,7 +13,9 @@ export const login = async (loginEmail, loginPassword) => {
     }
 }
 
-export const register = async (registerEmail, registerPassword, repeatPassword) => {
+export const register = async (registerEmail, registerPassword, repeatPassword, ev, navigate) => {
+    ev.preventDefault();
+
     const isVaid = inputValidator([registerEmail, registerPassword, repeatPassword])
         && passwordValidator(registerPassword, repeatPassword);
 
@@ -21,6 +23,7 @@ export const register = async (registerEmail, registerPassword, repeatPassword) 
         try {
             const user = await createUserWithEmailAndPassword(auth, registerEmail, registerPassword);
             console.log(user);
+            navigate('/movies');
         } catch (error) {
             console.log(error.message);
         }
