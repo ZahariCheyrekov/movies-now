@@ -18,7 +18,11 @@ const Register = () => {
                 Please fill in this form to create an account.
             </p>
 
-            <label htmlFor="email" className="frm-el"><b>Email</b></label>
+            <label htmlFor="email" className="frm-el">
+                <strong>
+                    Email
+                </strong>
+            </label>
             <input
                 type="text"
                 placeholder="Email"
@@ -62,7 +66,9 @@ const Register = () => {
 
             <button
                 onClick={() => register(registerEmail, registerPassword, repeatPassword)}
-                className="registerbtn frm-el red-btn">Register</button>
+                className="registerbtn frm-el red-btn">
+                Register
+            </button>
 
             <p className="alrd-have-acc-txt">
                 Already have an account?

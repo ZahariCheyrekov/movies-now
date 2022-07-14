@@ -13,7 +13,11 @@ const Login = () => {
                 Login
             </h1>
 
-            <label htmlFor="email" className="frm-el"><b>Email</b></label>
+            <label htmlFor="email" className="frm-el">
+                <strong>
+                    Email
+                </strong>
+            </label>
             <input
                 type="text"
                 placeholder="Email"
