@@ -11,9 +11,12 @@ const Register = () => {
 
     return (
         <form className="input-form" action="register-user">
-            <h1 className="register-form-ttl frm-el">Register</h1>
-            <p className="register-form-create-accnt frm-el">Please fill in this form to create an account.</p>
-            <hr />
+            <h1 className="register-form-ttl frm-el">
+                Register
+            </h1>
+            <p className="register-form-create-accnt frm-el">
+                Please fill in this form to create an account.
+            </p>
 
             <label htmlFor="email" className="frm-el"><b>Email</b></label>
             <input
@@ -26,7 +29,11 @@ const Register = () => {
                 onChange={(ev) => setRegisterEmail(ev.target.value)}
             />
 
-            <label htmlFor="psw" className="frm-el"><b>Password</b></label>
+            <label htmlFor="psw" className="frm-el">
+                <strong>
+                    Password
+                </strong>
+            </label>
             <input
                 type="password"
                 placeholder="Password"
@@ -37,7 +44,12 @@ const Register = () => {
                 onChange={(ev) => setRegisterPassword(ev.target.value)}
             />
 
-            <label htmlFor="psw-repeat frm-el"><b>Repeat Password</b></label>
+            <label htmlFor="psw-repeat"
+                className="frm-el">
+                <strong>
+                    Repeat Password
+                </strong>
+            </label>
             <input
                 type="password"
                 placeholder="Repeat Password"
@@ -45,14 +57,19 @@ const Register = () => {
                 id="psw-repeat"
                 className="input-el frm-el"
                 required
-                onChange={(ev) => setRepeatPassword(ev.target.value)} />
-            <hr />
+                onChange={(ev) => setRepeatPassword(ev.target.value)}
+            />
 
             <button
                 onClick={() => register(registerEmail, registerPassword, repeatPassword)}
-                className="registerbtn frm-el">Register</button>
+                className="registerbtn frm-el red-btn">Register</button>
 
-            <p>Already have an account? <Link to="/login">Sign in</Link>.</p>
+            <p className="alrd-have-acc-txt">
+                Already have an account?
+                <Link className="frm-link" to="/login">
+                    Sign in
+                </Link>
+            </p>
         </form>
 
     );
