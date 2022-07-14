@@ -2,7 +2,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } f
 import { auth } from '../../src/firebase-config';
 import { inputValidator } from '../validators/inputValidator';
 
-import { passwordEqualityValidator, passwordLengthValidator, passwordValidator } from '../validators/passwordValidator';
+import { passwordEqualityValidator, passwordLengthValidator } from '../validators/passwordValidator';
 
 export const login = async (loginEmail, loginPassword, ev) => {
     ev.preventDefault();
