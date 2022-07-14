@@ -1,5 +1,6 @@
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { auth } from '../../src/firebase-config';
+import { passwordValidator } from '../validators/passwordValidator';
 
 export const login = async (loginEmail, loginPassword) => {
     try {
@@ -10,7 +11,13 @@ export const login = async (loginEmail, loginPassword) => {
     }
 }
 
-export const register = async (registerEmail, registerPassword) => {
+export const register = async (registerEmail, registerPassword, repeatPassword) => {
+    const isVaid = passwordValidator(registerPassword, repeatPassword);
+
+    if (!isVaid) {
+        return;
+    }
+
     try {
         const user = await createUserWithEmailAndPassword(auth, registerEmail, registerPassword);
         console.log(user);
