@@ -71,7 +71,6 @@ const Register = () => {
                 </Link>
             </p>
         </form>
-
     );
 }
 
