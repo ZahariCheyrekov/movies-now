@@ -1,0 +1,19 @@
+.input-form {
+    background-color: white;
+    width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-el{
+    border: none;
+    color: black;
+    outline: none;
+}
+
+.frm-el{
+    margin: 10px 0;
+}
