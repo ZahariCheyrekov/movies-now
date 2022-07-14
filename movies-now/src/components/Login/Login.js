@@ -44,7 +44,7 @@ const Login = () => {
             />
 
             <button
-                onClick={() => login(loginEmail, loginPassword)}
+                onClick={(ev) => login(loginEmail, loginPassword, ev)}
                 className="loginbtn frm-el red-btn">Login</button>
 
             <p className="alrd-have-acc-txt">
