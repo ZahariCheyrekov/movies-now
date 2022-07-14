@@ -49,7 +49,7 @@ const Register = () => {
 
                 <p>By creating an account you agree to our <Link to="#">Terms  Privacy</Link>.</p>
                 <button
-                    onClick={(register(registerEmail, registerPassword, repeatPassword))}
+                    onClick={() => register(registerEmail, registerPassword, repeatPassword)}
                     type="button" className="registerbtn">Register</button>
             </div>
 
