@@ -67,7 +67,7 @@ const Register = () => {
             <p className="alrd-have-acc-txt">
                 Already have an account?
                 <Link className="frm-link" to="/login">
-                    Sign in
+                    Login
                 </Link>
             </p>
         </form>
