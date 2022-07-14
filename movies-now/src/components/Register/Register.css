@@ -1,19 +1,46 @@
 .input-form {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
     width: 600px;
     margin: 40px auto;
-    padding: 30px;
-    border-radius: 4px;
+    padding: 30px 40px;
+    border-radius: 6px;
     display: flex;
     flex-direction: column;
 }
 
-.input-el{
+.input-el {
     border: none;
     color: black;
     outline: none;
+    padding: 10px;
+    border-radius: 2px;
 }
 
-.frm-el{
+.frm-el {
     margin: 10px 0;
+}
+
+.red-btn {
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0;
+
+}
+
+.red-btn:hover {
+    background-color: rgb(117, 14, 14);
+}
+
+.frm-link {
+    color: rgb(255, 0, 0);
+}
+
+.alrd-have-acc-txt>a {
+    margin-left: 10px;
 }
