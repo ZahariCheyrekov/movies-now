@@ -2,14 +2,21 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } f
 import { auth } from '../../src/firebase-config';
 import { inputValidator } from '../validators/inputValidator';
 
-import { passwordValidator } from '../validators/passwordValidator';
+import { passwordEqualityValidator, passwordLengthValidator, passwordValidator } from '../validators/passwordValidator';
 
-export const login = async (loginEmail, loginPassword) => {
-    try {
-        const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
-        console.log(user);
-    } catch (error) {
-        console.log(error.message);
+export const login = async (loginEmail, loginPassword, ev) => {
+    ev.preventDefault();
+
+    const isValid = inputValidator([loginEmail, loginPassword])
+        && passwordLengthValidator(loginPassword);
+
+    if (isValid) {
+        try {
+            const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
+            console.log(user);
+        } catch (error) {
+            console.log(error.message);
+        }
     }
 }
 
@@ -17,7 +24,8 @@ export const register = async (registerEmail, registerPassword, repeatPassword, 
     ev.preventDefault();
 
     const isVaid = inputValidator([registerEmail, registerPassword, repeatPassword])
-        && passwordValidator(registerPassword, repeatPassword);
+        && passwordLengthValidator(repeatPassword)
+        && passwordEqualityValidator(registerPassword, repeatPassword);
 
     if (isVaid) {
         try {
