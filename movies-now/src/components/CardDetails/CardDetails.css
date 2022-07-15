@@ -58,7 +58,6 @@
     border-radius: 6px;
     text-transform: uppercase;
     cursor: pointer;
-transition: 0.5;
 }
 
 .dtls-btn.del {
