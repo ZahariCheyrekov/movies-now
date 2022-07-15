@@ -14,3 +14,5 @@ export const deleteMovie = (movieId) => requester.del(`${moviesUrl}/${movieId}.j
 export const likeMovie = (movieId, data) => requester.patch(`${moviesUrl}/${movieId}.json`, data);
 
 export const getLikes = (movieId) => requester.get(`${moviesUrl}/${movieId}/likes.json`);
+
+export const editMovie = (movieId, data) => requester.patch(`${moviesUrl}/${movieId}.json`, data);
