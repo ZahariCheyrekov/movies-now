@@ -49,8 +49,7 @@
     letter-spacing: 2px;
 }
 
-.dtls-del-btn {
-    background-color: rgb(255, 0, 0);
+.dtls-btn {
     color: #ffffff;
     font-weight: bold;
     font-size: 16px;
@@ -58,11 +57,16 @@
     border: none;
     border-radius: 6px;
     text-transform: uppercase;
+    cursor: pointer;
+transition: 0.5;
 }
 
-.dtls-del-btn:hover {
-    background-color: rgb(108, 9, 9);
-    cursor: pointer;
+.dtls-btn.del {
+    background-color: rgb(255, 0, 0);
+}
+
+.dtls-btn.edit{
+    background-color: rgb(25, 51, 183);
 }
 
 .mv-dtls-video {
