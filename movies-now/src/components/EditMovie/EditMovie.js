@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { editMovieHandler } from "../../handlers/editMovieHandler";
 
 import { getMovieCardById } from "../../services/movieService";
 
 const EditMovie = () => {
+    let navigate = useNavigate();
+
     const { movieCardId } = useParams();
     const [movie, setMovie] = useState({});
 
@@ -46,7 +49,7 @@ const EditMovie = () => {
             </label>
 
             <label htmlFor="update-btn">
-                <button className="btn submit updt-mv">
+                <button onClick={(ev) => editMovieHandler(ev, movieCardId, navigate)} className="btn submit updt-mv">
                     Update
                     <i className="fa-solid fa-pen"></i>
                 </button>
