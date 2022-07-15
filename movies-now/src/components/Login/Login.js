@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { login } from '../../services/userService';
 
 const Login = () => {
+    let navigate = useNavigate();
+
     const [loginEmail, setLoginEmail] = useState('');
     const [loginPassword, setLoginPassword] = useState('');
 
@@ -44,7 +46,7 @@ const Login = () => {
             />
 
             <button
-                onClick={(ev) => login(loginEmail, loginPassword, ev)}
+                onClick={(ev) => login(ev, loginEmail, loginPassword, navigate)}
                 className="loginbtn frm-el red-btn">Login</button>
 
             <p className="alrd-have-acc-txt">
