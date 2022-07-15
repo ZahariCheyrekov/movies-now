@@ -4,7 +4,7 @@ import { inputValidator } from '../validators/inputValidator';
 
 import { passwordEqualityValidator, passwordLengthValidator } from '../validators/passwordValidator';
 
-export const login = async (loginEmail, loginPassword, ev) => {
+export const login = async (ev, loginEmail, loginPassword, navigate) => {
     ev.preventDefault();
 
     const isValid = inputValidator([loginEmail, loginPassword])
@@ -14,13 +14,15 @@ export const login = async (loginEmail, loginPassword, ev) => {
         try {
             const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
             console.log(user);
+            navigate('/movies');
         } catch (error) {
+            alert(error.message);
             console.log(error.message);
         }
     }
 }
 
-export const register = async (registerEmail, registerPassword, repeatPassword, ev, navigate) => {
+export const register = async (ev, registerEmail, registerPassword, repeatPassword, navigate) => {
     ev.preventDefault();
 
     const isVaid = inputValidator([registerEmail, registerPassword, repeatPassword])
@@ -33,6 +35,7 @@ export const register = async (registerEmail, registerPassword, repeatPassword, 
             console.log(user);
             navigate('/movies');
         } catch (error) {
+            alert(error.message);
             console.log(error.message);
         }
     }
