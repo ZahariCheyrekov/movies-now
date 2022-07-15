@@ -6,10 +6,10 @@ import './Header.css';
 import popcornBag from '../../assets/popcorn-bag.png';
 
 import { logout } from '../../services/userService';
-import { UserContext } from '../../contexts/UserContext';
+import { AuthContext } from '../../contexts/AuthContext';
 
 const Header = () => {
-    const user = useContext(UserContext);
+    const user = useContext(AuthContext);
 
     return (
         <header className="site-header">
