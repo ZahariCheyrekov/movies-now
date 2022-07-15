@@ -14,6 +14,7 @@ import Footer from './components/Footer';
 import CardDetails from './components/CardDetails';
 import Login from './components/Login/Login';
 import Register from './components/Register';
+import ProtectedRoutes from './components/ProtectedRoutes/ProtectedRoutes';
 
 function App() {
   const [user, setUser] = useState();
@@ -33,8 +34,10 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/movies' element={<Movies />} />
-            <Route path='/create' element={<CreateMovie />} />
-            <Route path='/movies/details/:movieCardId' element={<CardDetails />} />
+            <Route element={<ProtectedRoutes />}>
+              <Route path='/create' element={<CreateMovie />} />
+              <Route path='/movies/details/:movieCardId' element={<CardDetails />} />
+            </Route>
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
           </Routes>
