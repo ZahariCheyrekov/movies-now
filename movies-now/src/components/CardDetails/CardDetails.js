@@ -4,7 +4,7 @@ import React from 'react';
 import ReactPlayer from 'react-player/youtube';
 
 import { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 import { getMovieCardById } from '../../services/movieService';
 import { deleteMovieHandler } from '../../handlers/deleteMovieHandler';
@@ -59,9 +59,10 @@ const CardDetails = () => {
                                 Delete
                             </button>
 
-                            <button className="dtls-btn edit">
+                            <Link to={`/movies/edit/${movieCardId}`}
+                                className="dtls-btn edit">
                                 Edit
-                            </button>
+                            </Link>
 
                         </section>
                     </article>
