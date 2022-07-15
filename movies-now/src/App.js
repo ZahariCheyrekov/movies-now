@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { UserContext } from './contexts/UserContext';
-import { onAuthStateChanged } from 'firebase/auth';
-import { auth } from './firebase-config';
+import { AuthContextProvider } from './contexts/AuthContext';
 
 import './App.css';
 
@@ -17,17 +15,9 @@ import Register from './components/Register';
 import ProtectedRoutes from './components/ProtectedRoutes/ProtectedRoutes';
 
 function App() {
-  const [user, setUser] = useState();
-
-  useEffect(() => {
-    onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser);
-    });
-  }, []);
-
   return (
     <>
-      <UserContext.Provider value={user}>
+      <AuthContextProvider>
         <Header />
 
         <main>
@@ -44,7 +34,7 @@ function App() {
         </main>
 
         <Footer />
-      </UserContext.Provider>
+      </AuthContextProvider>
     </>
   );
 }
