@@ -66,6 +66,10 @@ label.description-m-label .description-movie {
     font-size: 16px;
 }
 
+.updt-frm>label:last-child {
+    width: 100%;
+}
+
 .btn.submit>i {
     padding-left: 10px;
 }
