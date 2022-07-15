@@ -61,7 +61,7 @@ const CardDetails = () => {
 
                             <Link to={`/movies/edit/${movieCardId}`}
                                 className="dtls-btn edit">
-                                Edit 
+                                Edit
                             </Link>
 
                         </section>
