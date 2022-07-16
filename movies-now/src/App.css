@@ -41,6 +41,14 @@ body {
         width: unset;
     }
 
+    article.header-img-art {
+        display: none;
+    }
+
+    nav.header-nav {
+        display: none;
+    }
+
     .site.sec {
         height: unset;
     }
@@ -91,9 +99,9 @@ body {
         width: 100%;
     }
 
-   .movie-card-link:last-child .movie-card-title{
-margin-bottom: 60px;
-   }
+    .movie-card-link:last-child .movie-card-title {
+        margin-bottom: 60px;
+    }
 
     div.container {
         width: unset;
@@ -163,5 +171,20 @@ margin-bottom: 60px;
         border: none;
         margin: 8px 0;
         height: 30px;
+    }
+
+    @media only screen and (max-width: 400px) {
+        div.container {
+            flex-direction: column;
+            padding: 0 32px;
+        }
+
+        .title-movie-srch-lable {
+            display: none;
+        }
+
+        section.genre-options {
+            width: 100%;
+        }
     }
 }
