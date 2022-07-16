@@ -82,10 +82,20 @@ body {
         display: none;
     }
 
+    input.title-mv-srch {
+        width: 100%;
+    }
+
+    main {
+        padding: 0 20px 30px;
+        padding-bottom: 30px;
+    }
+
     div.container {
         width: unset;
         justify-content: space-around;
         margin-bottom: 30px;
+        padding: 0 20px;
     }
 
     ul.movies-list {
@@ -97,7 +107,7 @@ body {
     }
 
     .movie-card-link {
-        width: 400px;
+        width: 80%;
     }
 
     li.movie-card-element {
@@ -115,8 +125,9 @@ body {
         width: unset;
     }
 
-    main {
-        padding: 0 30px;
+    article.mv-card-img-d>img {
+        width: 80%;
+        height: unset;
     }
 
     .mv-card-img-d {
