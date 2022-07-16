@@ -7,7 +7,7 @@ export const requester = async (method, url, data) => {
     if (data) {
         options.headers['Content-Type'] = 'application/json';
 
-        if (data) {
+        if (method !== 'GET') {
             options.body = JSON.stringify(data);
         }
     }
