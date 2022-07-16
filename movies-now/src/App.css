@@ -8,9 +8,16 @@
     padding: 0;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: rgb(10, 10, 10);
     font-family: 'Montserrat', sans-serif;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 246px;
 }
 
 ::-webkit-scrollbar {

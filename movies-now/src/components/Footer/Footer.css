@@ -1,7 +1,9 @@
 .site-footer {
     background-color: rgb(0, 0, 0);
-    height: 16vh;
-    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .footer-content {
@@ -14,4 +16,35 @@
 .footer-title {
     color: #ffffff;
     letter-spacing: 1px;
+}
+
+.footer-list {
+    margin-top: 30px;
+    display: flex;
+    color: #ffffffb0;
+    list-style: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.footer-list>ul {
+    width: 33%;
+}
+
+ul {
+    list-style: none;
+}
+
+.middle-list {
+    text-align: center;
+}
+
+.last-list {
+    text-align: end;
+}
+
+.footer-li-item {
+    width: 100%;
+    flex-basis: 33%;
+    padding: 10px 0;
 }
