@@ -4,7 +4,7 @@ import useGenre from '../../../hooks/useGenre';
 import './MovieGenres.css';
 
 import { toggleActiveStyle } from '../../../utils/genreUtil';
-import { getMoviesByGenre } from '../../../utils/movieUtil';
+import { getMoviesByData } from '../../../utils/movieUtil';
 
 const MovieGenres = ({
     selected,
@@ -28,7 +28,7 @@ const MovieGenres = ({
                         if (genre === 'All') {
                             getMovies();
                         } else {
-                            const movies = await getMoviesByGenre(genre);
+                            const movies = await getMoviesByData(genre, 'type');
                             setMovies(movies);
                         }
                     }}
