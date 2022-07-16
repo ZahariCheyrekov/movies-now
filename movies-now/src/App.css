@@ -134,12 +134,16 @@ body {
         flex-direction: column;
     }
 
+    .mv-card-details-info.dt-el {
+        padding: 10px 30px;
+    }
+
     section.mv-dtls-video {
         width: unset;
     }
 
     article.mv-card-img-d>img {
-        width: 80%;
+        width: 50%;
         height: unset;
     }
 
