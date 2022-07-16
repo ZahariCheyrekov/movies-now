@@ -1,7 +1,7 @@
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { auth } from '../../src/firebase-config';
-import { inputValidator } from '../validators/inputValidator';
 
+import { inputValidator } from '../validators/inputValidator';
 import { passwordEqualityValidator, passwordLengthValidator } from '../validators/passwordValidator';
 
 export const login = async (ev, loginEmail, loginPassword, navigate) => {
@@ -12,12 +12,11 @@ export const login = async (ev, loginEmail, loginPassword, navigate) => {
 
     if (isValid) {
         try {
-            const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
-            console.log(user);
+            await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
             navigate('/movies');
         } catch (error) {
             alert(error.message);
-            console.log(error.message);
+            throw new Error(error.message);
         }
     }
 }
@@ -26,17 +25,16 @@ export const register = async (ev, registerEmail, registerPassword, repeatPasswo
     ev.preventDefault();
 
     const isVaid = inputValidator([registerEmail, registerPassword, repeatPassword])
-        && passwordLengthValidator(repeatPassword)
+        && passwordLengthValidator(registerPassword)
         && passwordEqualityValidator(registerPassword, repeatPassword);
 
     if (isVaid) {
         try {
-            const user = await createUserWithEmailAndPassword(auth, registerEmail, registerPassword);
-            console.log(user);
+            await createUserWithEmailAndPassword(auth, registerEmail, registerPassword);
             navigate('/movies');
         } catch (error) {
             alert(error.message);
-            console.log(error.message);
+            throw new Error(error.message);
         }
     }
 }
