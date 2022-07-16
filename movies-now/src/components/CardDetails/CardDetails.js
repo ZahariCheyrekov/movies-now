@@ -4,15 +4,12 @@ import React from 'react';
 import ReactPlayer from 'react-player/youtube';
 
 import { useEffect, useState } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import { getMovieCardById } from '../../services/movieService';
-import { deleteMovieHandler } from '../../handlers/deleteMovieHandler';
 import Spinner from '../Spinner/Spinner';
 
 const CardDetails = () => {
-    let navigate = useNavigate();
-
     const [loading, setLoading] = useState(false);
     const { movieCardId } = useParams();
     const [movie, setMovie] = useState({});
@@ -54,16 +51,6 @@ const CardDetails = () => {
                             <p className="mvs-card-description dt-el" >
                                 {movie.description}
                             </p>
-
-                            <button onClick={() => deleteMovieHandler(movieCardId, navigate)} className="dtls-btn del">
-                                Delete
-                            </button>
-
-                            <Link to={`/movies/edit/${movieCardId}`}
-                                className="dtls-btn edit">
-                                Edit
-                            </Link>
-
                         </section>
                     </article>
 
