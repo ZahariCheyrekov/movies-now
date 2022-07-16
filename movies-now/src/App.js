@@ -13,6 +13,7 @@ import CardDetails from './components/CardDetails';
 import Login from './components/Login/Login';
 import Register from './components/Register';
 import ProtectedRoutes from './components/ProtectedRoutes/ProtectedRoutes';
+import NotFound404 from './components/NotFound404/NotFound404';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path='/movies/details/:movieCardId' element={<CardDetails />} />
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
+            <Route path='*' element={<NotFound404 />} />
           </Routes>
         </main>
 
