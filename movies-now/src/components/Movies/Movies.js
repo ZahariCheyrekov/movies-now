@@ -9,7 +9,7 @@ import { getAllMovies } from '../../services/movieService';
 import MovieBox from '../MovieBox/MovieBox';
 import MovieGenres from './MovieGenres/MovieGenres';
 import MovieList from './MovieList/MovieList';
-import { getMoviesByTitle } from '../../utils/movieUtil';
+import { getMoviesByData } from '../../utils/movieUtil';
 
 const Movies = () => {
     const [movies, setMovies] = useState([]);
@@ -21,7 +21,7 @@ const Movies = () => {
     }, []);
 
     const searchMovies = async (title) => {
-        const moviesByTitle = await getMoviesByTitle(title);
+        const moviesByTitle = await getMoviesByData(title, 'title');
         setMovies(moviesByTitle);
     }
 
