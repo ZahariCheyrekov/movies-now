@@ -67,7 +67,7 @@ const Register = () => {
             />
 
             <button
-                onClick={(ev) => register(registerEmail, registerPassword, repeatPassword, ev, navigate)}
+                onClick={(ev) => register(ev, registerEmail, registerPassword, repeatPassword, navigate)}
                 className="registerbtn frm-el red-btn">
                 Register
             </button>
