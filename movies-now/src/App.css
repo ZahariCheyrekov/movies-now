@@ -45,6 +45,11 @@ body {
         height: unset;
     }
 
+    .explore-movies.site-sec:nth-child(3)>div>article.explr-img-sec,
+    .explore-movies.site-sec:nth-child(4)>div>article.explr-img-sec,
+    .explore-movies.site-sec:nth-child(5)>div>article.explr-img-sec {
+        display: none;
+    }
 
     .explr-mv-wrapper {
         flex-direction: column;
@@ -86,10 +91,9 @@ body {
         width: 100%;
     }
 
-    main {
-        padding: 0 20px 30px;
-        padding-bottom: 30px;
-    }
+   .movie-card-link:last-child .movie-card-title{
+margin-bottom: 60px;
+   }
 
     div.container {
         width: unset;
@@ -114,7 +118,7 @@ body {
         width: unset;
         height: unset;
     }
- 
+
     /* details */
     article.movie-card-details {
         width: unset;
