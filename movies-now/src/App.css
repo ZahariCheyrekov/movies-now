@@ -46,7 +46,12 @@ body {
     }
 
     nav.header-nav {
-        display: none;
+        /* display: none; */
+        flex-wrap: wrap;
+    }
+
+    h1.home-title {
+        transform: translate(-50%, -50%);
     }
 
     .site.sec {
