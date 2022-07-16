@@ -1,6 +1,6 @@
 .create-movie-form {
     display: flex;
-    margin: 60px auto;
+    margin: 100px auto;
     flex-wrap: wrap;
     justify-content: space-between;
 
@@ -19,6 +19,10 @@
     gap: 2px;
     width: 47%;
     font-size: 18px;
+}
+
+.trailer-m-label {
+    flex-basis: 100%;
 }
 
 .create-movie-title {
