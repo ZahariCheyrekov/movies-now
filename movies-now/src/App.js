@@ -27,9 +27,9 @@ function App() {
             <Route path='/movies' element={<Movies />} />
             <Route element={<ProtectedRoutes />}>
               <Route path='/create' element={<CreateMovie />} />
-              <Route path='/movies/details/:movieCardId' element={<CardDetails />} />
               <Route path='/movies/edit/:movieCardId' element={< EditMovie />} />
             </Route>
+            <Route path='/movies/details/:movieCardId' element={<CardDetails />} />
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
           </Routes>
