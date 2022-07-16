@@ -12,7 +12,6 @@ import Footer from './components/Footer';
 import CardDetails from './components/CardDetails';
 import Login from './components/Login/Login';
 import Register from './components/Register';
-import EditMovie from './components/EditMovie';
 import ProtectedRoutes from './components/ProtectedRoutes/ProtectedRoutes';
 
 function App() {
@@ -27,7 +26,6 @@ function App() {
             <Route path='/movies' element={<Movies />} />
             <Route element={<ProtectedRoutes />}>
               <Route path='/create' element={<CreateMovie />} />
-              <Route path='/movies/edit/:movieCardId' element={< EditMovie />} />
             </Route>
             <Route path='/movies/details/:movieCardId' element={<CardDetails />} />
             <Route path='/login' element={<Login />} />
