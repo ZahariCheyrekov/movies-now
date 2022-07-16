@@ -41,10 +41,6 @@ body {
         width: unset;
     }
 
-    article.header-img-art {
-        display: none;
-    }
-
     nav.header-nav {
         /* display: none; */
         flex-wrap: wrap;
