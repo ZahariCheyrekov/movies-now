@@ -5,8 +5,8 @@ import './Header.css';
 
 import popcornBag from '../../assets/popcorn-bag.png';
 
-import { logout } from '../../services/userService';
 import { AuthContext } from '../../contexts/AuthContext';
+import NavBar from '../NavBar';
 
 const Header = () => {
     const user = useContext(AuthContext);
@@ -24,21 +24,7 @@ const Header = () => {
                     </article>
                 </section>
 
-                <nav className="header-nav">
-                    <Link to="/">Home</Link>
-                    <Link to="/movies">Movies</Link>
-
-                    {user
-                        ? <>
-                            <Link to="/create">Create Movie</Link>
-                            <Link onClick={logout} to="/">Logout</Link>
-                        </>
-                        : <>
-                            <Link to="/login">Login</Link>
-                            <Link to="/register">Register</Link>
-                        </>
-                    }
-                </nav>
+                <NavBar user={user} />
             </div>
         </header>
     );
