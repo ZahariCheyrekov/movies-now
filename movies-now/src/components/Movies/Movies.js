@@ -5,18 +5,24 @@ import './Movies.css';
 import { useState, useEffect } from 'react';
 
 import { getAllMovies } from '../../services/movieService';
+import { getMoviesByData } from '../../utils/movieUtil';
 
 import MovieBox from '../MovieBox/MovieBox';
 import MovieGenres from './MovieGenres/MovieGenres';
 import MovieList from './MovieList/MovieList';
-import { getMoviesByData } from '../../utils/movieUtil';
+import Spinner from '../Spinner/Spinner';
 
 const Movies = () => {
+    const [loading, setLoading] = useState(false);
     const [movies, setMovies] = useState([]);
     const [isActive, setIsActive] = useState(false);
     const [selected, setSelected] = useState('All');
 
     useEffect(() => {
+        setLoading(true);
+        setTimeout(() => {
+            setLoading(false);
+        }, 1000);
         getMovies();
     }, []);
 
@@ -65,7 +71,10 @@ const Movies = () => {
                 </section>
             </div>
 
-            <MovieList movies={movies} />
+            {loading
+                ? <Spinner />
+                : <MovieList movies={movies} />
+            }
         </>
     );
 }
