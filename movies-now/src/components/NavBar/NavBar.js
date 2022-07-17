@@ -7,7 +7,7 @@ const NavBar = ({ user }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="header-nav" >
+        <nav className={`header-nav ${isOpen && "open"}`} >
             <Link to="/">Home</Link>
             <Link to="/movies">Movies</Link>
 
@@ -21,6 +21,14 @@ const NavBar = ({ user }) => {
                     <Link to="/register">Register</Link>
                 </>
             }
+
+            <div
+                className={`nav-toggle ${isOpen && "open"}`}
+                onClick={() => setIsOpen(!isOpen)}
+            >
+                <div className="bar">
+                </div>
+            </div>
         </nav>
     );
 }
