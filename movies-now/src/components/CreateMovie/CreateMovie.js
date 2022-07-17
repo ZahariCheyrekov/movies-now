@@ -24,8 +24,8 @@ const CreateMovie = () => {
             </label>
 
             <label htmlFor="movie-year" className="year-m-label">Year:
-                <input type="text" className="year-movie input-el-m" name="year"
-                    placeholder="2022" />
+                <input type="number" className="year-movie input-el-m" name="year"
+                    placeholder="2022" min="1888" max={new Date().getFullYear()} />
             </label>
 
             <label htmlFor="movie-img" className="image-m-label">Image url:
