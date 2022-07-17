@@ -1,16 +1,17 @@
-const saveUser = (user) => {
-    localStorage.setItem('user', JSON.stringify(user));
+export const saveUser = (user) => {
+    localStorage.setItem('user', JSON.stringify(user.user));
 }
 
-const getUser = () => {
+export const getUser = () => {
     const serializedUser = localStorage.getItem('user');
 
     if (serializedUser) {
         const user = JSON.parse(serializedUser);
         return user;
     }
+
 }
 
-const removeUser = () => localStorage.removeItem('user');
+export const removeUser = () => localStorage.removeItem('user');
 
-const getAccessToken = () => getUser?.aceessToken;
+export const getAccessToken = () => getUser()?.aceessToken;
