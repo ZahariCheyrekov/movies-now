@@ -110,10 +110,10 @@
         text-align: center;
     }
 
-    form.input-form {
+    main>form.input-form {
         width: 70%;
         padding: 12px 22px;
-        margin: 70px 0 20px;
+        margin: 70px auto 90px;
     }
 
     button.red-btn {
