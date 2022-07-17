@@ -9,7 +9,6 @@ export const getUser = () => {
         const user = JSON.parse(serializedUser);
         return user;
     }
-
 }
 
 export const removeUser = () => localStorage.removeItem('user');
