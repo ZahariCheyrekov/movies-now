@@ -4,10 +4,13 @@ import './CreateMovie.css';
 
 import { createMovieHandler } from '../../handlers/createMovieHandler';
 import { clearFieldsHandler } from '../../handlers/clearFieldsHandler';
+import { useNavigate } from 'react-router-dom';
 
 const CreateMovie = () => {
+    let navigate = useNavigate();
+
     return (
-        <form onSubmit={createMovieHandler} className="create-movie-form" method="POST">
+        <form className="create-movie-form" >
             <h2 className="create-movie-title">Create Movie</h2>
 
             <label htmlFor="movie-title" className="title-m-label">Title:
@@ -49,7 +52,7 @@ const CreateMovie = () => {
             </label>
 
             <label htmlFor="create-btn">
-                <button type="submit" className="btn submit add-mv">
+                <button onClick={(ev) => createMovieHandler(ev, navigate)} className="btn submit add-mv">
                     Add Movie
                     <i className="fa-solid fa-paper-plane"></i>
                 </button>
