@@ -1,0 +1,30 @@
+@media only screen and (max-width: 400px) {
+    div.container {
+        flex-direction: column;
+        padding: 0 32px;
+    }
+
+    .title-movie-srch-lable {
+        display: none;
+    }
+
+    section.genre-options {
+        width: 100%;
+    }
+
+    .header-img-art {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    main>ul.movies-list {
+        flex-direction: column;
+
+    }
+
+    main>ul.movies-list>.movie-card-link {
+        width: 50%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,138 @@
+@media only screen and (max-width: 1200px) {
+    div.header-wrapper {
+        padding: 10px 20px;
+        width: unset;
+    }
+
+    nav.header-nav {
+        flex-wrap: wrap;
+    }
+
+    h1.home-title {
+        transform: translate(-50%, -50%);
+    }
+
+    .site.sec {
+        height: unset;
+    }
+
+    .explore-movies.site-sec:nth-child(3)>div>article.explr-img-sec,
+    .explore-movies.site-sec:nth-child(4)>div>article.explr-img-sec,
+    .explore-movies.site-sec:nth-child(5)>div>article.explr-img-sec {
+        display: none;
+    }
+
+    .explr-mv-wrapper {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 20px;
+    }
+
+    .explore-movies.site-sec:nth-child(4)>div {
+        flex-direction: column-reverse;
+    }
+
+    .explore-movies.site-sec {
+        height: unset;
+    }
+
+    article.explr-mv-content {
+        width: 80%;
+    }
+
+    div.explr-mv-wrapper {
+        width: unset;
+    }
+
+    img.gallery-img.scl {
+        transform: scale(1);
+    }
+
+    article.gallery-img-art {
+        height: 420px;
+    }
+
+    .movie-box-sec {
+        display: none;
+    }
+
+    input.title-mv-srch {
+        width: 100%;
+    }
+
+    .movie-card-link:last-child .movie-card-title {
+        margin-bottom: 60px;
+    }
+
+    div.container {
+        width: unset;
+        justify-content: space-around;
+        margin-bottom: 30px;
+        padding: 0 20px;
+    }
+
+    ul.movies-list {
+        justify-content: space-around;
+        width: unset;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .movie-card-link {
+        width: 27%;
+    }
+
+    li.movie-card-element {
+        width: unset;
+        height: unset;
+    }
+
+    article.movie-card-details {
+        width: unset;
+        flex-direction: column;
+    }
+
+    .mv-card-details-info.dt-el {
+        padding: 10px 30px;
+    }
+
+    section.mv-dtls-video {
+        width: unset;
+    }
+
+    article.mv-card-img-d>img {
+        width: 50%;
+        height: unset;
+    }
+
+    .mv-card-img-d {
+        text-align: center;
+    }
+
+    form.input-form {
+        width: 70%;
+        padding: 12px 22px;
+        margin: 70px 0 20px;
+    }
+
+    button.red-btn {
+        border: none;
+    }
+
+    form.create-movie-form {
+        width: 70%;
+        height: unset;
+        display: block;
+    }
+
+    form.create-movie-form>label {
+        width: 100%;
+    }
+
+    button.btn.submit {
+        border: none;
+        margin: 8px 0;
+        height: 30px;
+    }
+}
