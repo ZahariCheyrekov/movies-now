@@ -52,3 +52,18 @@ Movies Now is a place where you can find your favorite movies. The application g
 - Watch Trailers
   - watch movie trailer
   - enjoy the experience
+
+# Future Features
+
+- Like
+  - users can like the movies they want
+
+- Comment
+  - user can comment in the movie comment section 
+
+- Download
+  - registered users can download movies
+
+
+
+
