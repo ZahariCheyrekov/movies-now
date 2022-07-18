@@ -71,3 +71,52 @@ Movies Now is a place where you can find your favorite movies. The application g
   - React Loading
   - React Player
   - Firebase
+
+# Movies Now Packages
+
+  - API
+    - requester - function for making `GET, PUT, POST, PATCH` and `DELETE` requests  
+  
+  - Assets
+    - package for all assets related to the application
+  
+  - Components
+  - // TODO
+
+  - Contexts
+    - AuthContext - context for user authentication 
+  
+  - Handlers
+    - clearFieldsHandler - option for clearing all input fields of the given form 
+    - createMovieHanlder - handler that receives movie information and uses requester to make `POST` request to the firebase database
+  
+  - Hooks
+    - useState
+    - useEffect
+    - useNavigate - used for forced navigation to desired page
+    - useGenre - custom hook for all movie genres
+  
+  - Messages
+    - package for storing application messages 
+  
+  - Services
+    - localStorageServices
+      - saveUser - saves user to the local storage
+      - getUser - gets user from the local storage
+      - removeUser - removes user from the local storage
+      - getAccessToken - gets accessToken of the current user
+
+    - movieServices
+      - getAllMovies - makes `GET` request and returns all movies in the database 
+      - getMovieByCardId - makes `GET` request and returns information about the given movie
+      - createNewMovie - makes `POST` request that sends movie information to the database
+
+    - userServices
+      - login - gives the user opportunity to sign in with email and password
+      - register - register user with email and password
+      - logout - ends access to the application
+    
+  - Validators
+
+
+
