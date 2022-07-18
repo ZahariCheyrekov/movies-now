@@ -4,14 +4,14 @@ You can visit the project from here: https://movies-noww.herokuapp.com/
 
 # Table of Contents
   - <a href="#about">About this Project</a>
-  - <a href="#howto">How to run the app on your computer</p>
-  - <a href="#um">User Movies</p>
-  - <a href="#ftrs">Features</p>
-  - <a href="#ff">Future Features</p>
-  - <a href="#dep">Dependencies</p>
-  - <a href="#movnowpckg">Movies Now Packages</p>
-  - <a href="#tech">Tech</p>
-  - <a href="#apppic">Application Pictures</p>
+  - <a href="#howto">How to run the app on your computer</a>
+  - <a href="#um">User Movies</a>
+  - <a href="#ftrs">Features</a>
+  - <a href="#ff">Future Features</a>
+  - <a href="#dep">Dependencies</a>
+  - <a href="#movnowpckg">Movies Now Packages</a>
+  - <a href="#tech">Tech</a>
+  - <a href="#apppic">Application Pictures</a>
 
 #  <p id="about">About this project</p>
 
