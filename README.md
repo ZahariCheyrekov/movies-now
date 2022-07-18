@@ -1,6 +1,6 @@
 # Movies-Now
 
-You can visit the project from here: Coming Soon
+You can visit the project from here: https://movies-noww.herokuapp.com/
 
 # About this project
 
