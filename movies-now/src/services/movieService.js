@@ -8,11 +8,3 @@ export const getAllMovies = () => requester.get(`${moviesUrl}.json`);
 export const getMovieCardById = (movieId) => requester.get(`${moviesUrl}/${movieId}.json`);
 
 export const createNewMovie = (data) => requester.post(`${moviesUrl}.json`, data);
-
-export const deleteMovie = (movieId) => requester.del(`${moviesUrl}/${movieId}.json`);
-
-export const likeMovie = (movieId, data) => requester.patch(`${moviesUrl}/${movieId}.json`, data);
-
-export const getLikes = (movieId) => requester.get(`${moviesUrl}/${movieId}/likes.json`);
-
-export const editMovie = (movieId, data) => requester.patch(`${moviesUrl}/${movieId}.json`, data);
