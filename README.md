@@ -132,14 +132,14 @@ Movies Now is a place where you can find your favorite movies. The application g
     - yearValidator - checks if the movie year is between 1888 and current year
 
 # Tech
-  - React
-  - React Router
-  - React Loading
-  - React Player
-  - Firebase
-  - Firebase Realtime Database
-  - Firebase Authentication
-  - Postman
-  - Unsplash
-  - Heroku
-  - Glitch
+  - <a href="https://reactjs.org/">React</a>
+  - <a href="https://reactrouter.com/">React Router</a>
+  - <a href="https://www.npmjs.com/package/react-loading">React Loading</a>
+  - <a href="https://www.npmjs.com/package/react-player">React Player</a>
+  - <a href="https://firebase.google.com/">Firebase</a>
+  - <a href="https://firebase.google.com/docs/database">Firebase Realtime Database</a>
+  - <a href="https://firebase.google.com/docs/auth">Firebase Authentication</a>
+  - <a href="https://www.postman.com/">Postman</a>
+  - <a href="https://unsplash.com/">Unsplash</a>
+  - <a href="https://www.heroku.com/">Heroku</a>
+  - <a href="https://glitch.com/">Glitch</a>
