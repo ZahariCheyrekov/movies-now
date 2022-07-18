@@ -143,3 +143,10 @@ Movies Now is a place where you can find your favorite movies. The application g
   - <a href="https://unsplash.com/">Unsplash</a>
   - <a href="https://www.heroku.com/">Heroku</a>
   - <a href="https://glitch.com/">Glitch</a>
+
+# Application Pictures
+
+  ## Laptop
+  ![movies-now-home-lp](https://user-images.githubusercontent.com/95768526/179507553-245b2968-0b12-4098-916b-7d58f3463508.png)
+
+  
