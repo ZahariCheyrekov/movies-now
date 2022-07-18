@@ -24,3 +24,24 @@ Movies Now is a place where you can find your favorite movies. The application g
 - They can create movie by navigating to create page or simply by going to `/create`.
 
 # Features
+
+- Register
+  - create account
+  - explore movie collection
+  - share your experience with others
+  - become part of Movies Now community
+
+- Login
+  - login in existing account
+  - find movies you love
+  
+- Create Movie
+  - create movie
+  - add it to the movie collection
+  - learn about other productions
+
+- Search
+  - search movies by genre 
+  - search movies by title
+  - find the movies you want as fast as possible
+
