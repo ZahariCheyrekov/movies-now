@@ -15,3 +15,10 @@ Movies Now is a place where you can find your favorite movies. The application g
 5. Type `npm i` to install all modules that are listed on `package.json` file and their dependencies.
 6. Type `npm start` to run the project in the browser. It will start on `http://localhost:3000`, but you can change it to another if necessary. Type `y` to do it.
 7. Explore Movies Now.
+
+
+# User movies
+
+- The registered users can create movies they love. 
+- They can explore the movies they added and also the other movies created by different users.
+- They can create movie by navigating to create page or simply by going to `/create`.
