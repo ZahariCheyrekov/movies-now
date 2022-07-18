@@ -65,13 +65,13 @@ Movies Now is a place where you can find your favorite movies. The application g
 
 # <p id="ff">Future Features</p>
 
-- Like
+- <strong>Like</strong>
   - users can like the movies they want
 
-- Comment
+- <strong>Comment</strong>
   - user can comment in the comment section 
 
-- Download
+- <strong>Download</strong>
   - registered users can download movies
 
 # <p id="dep">Dependencies</p>
