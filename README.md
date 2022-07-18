@@ -123,3 +123,10 @@ Movies Now is a place where you can find your favorite movies. The application g
     - movieUtils
       - getMoviesByData - returns movie information by the given movie data type (title, genre, description, imageUrl, trailerUrl, overview, year)   
 
+  - Validators 
+    - inputValidator - function that checks if any of the given form input fields is empty
+    - passwordValidator
+      - passwordLengthValidator - checks if the entered password is less than 6 characters
+      - passwordEqualityValidator - checks if repeated password is equal to the original password
+    - yearValidator - checks if the movie year is between 1888 and current year
+
