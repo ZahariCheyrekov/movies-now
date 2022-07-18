@@ -51,3 +51,4 @@ Movies Now is a place where you can find your favorite movies. The application g
 
 - Watch Trailers
   - watch movie trailer
+  - enjoy the experience
