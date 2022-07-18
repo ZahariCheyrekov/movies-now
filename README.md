@@ -167,12 +167,23 @@ Movies Now is a place where you can find your favorite movies. The application g
   ![movies-now-register-lp](https://user-images.githubusercontent.com/95768526/179508821-656f3b7e-d47b-4867-aea9-392b9ce5c754.png)
 
 
+  ### Phone
+  
+  #### Home
+  ![movies-now-home-ph](https://user-images.githubusercontent.com/95768526/179510318-194cc494-fa4d-4c5a-8fc0-8abbb16b76a1.png)
 
+  #### Movies
+  ![movies-now-movies-ph](https://user-images.githubusercontent.com/95768526/179510363-3191d769-2144-48ad-a735-13c351000690.png)
 
+  #### Movie Details
+  ![movies-now-details-p](https://user-images.githubusercontent.com/95768526/179510580-aa454a8f-32be-4cce-9883-082a2dc6f343.png)
 
+  #### Create Movie
+  ![movies-now-create-ph](https://user-images.githubusercontent.com/95768526/179510617-1d7e2653-804f-4df5-9cb6-4c7a1314b1fe.png)
+
+  #### Login
+  ![movies-now-login-ph](https://user-images.githubusercontent.com/95768526/179510659-f895de6d-45ab-499d-aaab-6ff040876863.png)
   
-  
-  
-  
-  
-  
+  #### Register
+  ![movies-now-register-ph](https://user-images.githubusercontent.com/95768526/179510688-0d55ed14-6f8e-46dd-8f86-48cfcbda0989.png)
+
