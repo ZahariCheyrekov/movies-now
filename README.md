@@ -59,7 +59,7 @@ Movies Now is a place where you can find your favorite movies. The application g
   - users can like the movies they want
 
 - Comment
-  - user can comment in the movie comment section 
+  - user can comment in the comment section 
 
 - Download
   - registered users can download movies
