@@ -87,7 +87,7 @@ Movies Now is a place where you can find your favorite movies. The application g
   
   - Handlers
     - clearFieldsHandler - option for clearing all input fields of the given form 
-    - createMovieHanlder - handler that receives movie information and uses requester to make `POST` request to the firebase database
+    - createMovieHanlder - handler that receives movie information and uses requester to make `POST` request to the Firebase database
   
   - Hooks
     - useState
