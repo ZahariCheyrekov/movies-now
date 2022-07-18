@@ -84,32 +84,32 @@ Movies Now is a place where you can find your favorite movies. The application g
 
 # <p id="movnowpckg">Movies Now Packages</p>
 
-  - API
+  - <strong>API</strong>
     - requester - function for making `GET`, `PUT`, `POST`, `PATCH` and `DELETE` requests  
   
-  - Assets
+  - <strong>Assets</strong>
     - package for all assets related to the application
   
-  - Components
+  - <strong>Components</strong>
     - contain folders for each component of the application 
 
-  - Contexts
+  - <strong>Contexts</strong>
     - AuthContext - context for user authentication 
   
-  - Handlers
+  - <strong>Handlers</strong>
     - clearFieldsHandler - option for clearing all input fields of the given form 
     - createMovieHanlder - handler that receives movie information and uses requester to make `POST` request to the Firebase database
   
-  - Hooks
+  - <strong>Hooks</strong>
     - useState
     - useEffect
     - useNavigate - used for forced navigation to desired page
     - useGenre - custom hook for all movie genres
   
-  - Messages
+  - <strong>Messages</strong>
     - package for storing application messages 
   
-  - Services
+  - <strong>Services</strong>
     - localStorageServices
       - saveUser - saves user to the local storage
       - getUser - gets user from the local storage
@@ -126,14 +126,14 @@ Movies Now is a place where you can find your favorite movies. The application g
       - register - register user with email and password
       - logout - ends access to the application
     
-  - Utils
+  - <strong>Utils</strong>
     - genreUtils 
       - toggleActiveStyle - returns style class name for the selected genre
     
     - movieUtils
       - getMoviesByData - returns movie information by the given movie data type (title, genre, description, imageUrl, trailerUrl, overview, year)   
 
-  - Validators 
+  - <strong>Validators</strong>
     - inputValidator - function that checks if any of the given form input fields is empty
     
     - passwordValidator
