@@ -131,3 +131,15 @@ Movies Now is a place where you can find your favorite movies. The application g
     
     - yearValidator - checks if the movie year is between 1888 and current year
 
+# Tech
+  - React
+  - React Router
+  - React Loading
+  - React Player
+  - Firebase
+  - Firebase Realtime Database
+  - Firebase Authentication
+  - Postman
+  - Unsplash
+  - Heroku
+  - Glitch
