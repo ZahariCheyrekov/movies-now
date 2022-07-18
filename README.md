@@ -76,11 +76,11 @@ Movies Now is a place where you can find your favorite movies. The application g
 
 # <p id="dep">Dependencies</p>
 
-  - React
-  - React Router 
-  - React Loading
-  - React Player
-  - Firebase
+  - <a href="https://reactjs.org/">React</a>
+  - <a href="https://reactrouter.com/">React Router</a>
+  - <a href="https://www.npmjs.com/package/react-loading">React Loading</a>
+  - <a href="https://www.npmjs.com/package/react-player">React Player</a>
+  - <a href="https://firebase.google.com/">Firebase</a>
 
 # <p id="movnowpckg">Movies Now Packages</p>
 
