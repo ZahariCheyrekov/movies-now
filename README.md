@@ -45,3 +45,9 @@ Movies Now is a place where you can find your favorite movies. The application g
   - search movies by title
   - find the movies you want as fast as possible
 
+- Movie Info
+  - learn more about the given movie
+  - read about production process
+
+- Watch Trailers
+  - watch movie trailer
