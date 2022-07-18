@@ -35,31 +35,31 @@ Movies Now is a place where you can find your favorite movies. The application g
 
 # <p id="ftrs">Features</p>
 
-- Register
+- <strong>Register</strong>
   - create account
   - explore movie collection
   - share your experience with others
   - become part of Movies Now community
 
-- Login
+- <strong>Login</strong>
   - login in existing account
   - find movies you love
   
-- Create Movie
+- <strong>Create Movie</strong>
   - create movie
   - add it to the movie collection
   - learn about other productions
 
-- Search
+- <strong>Search</strong>
   - search movies by genre 
   - search movies by title
   - find the movies you want as fast as possible
 
-- Movie Info
+- <strong>Movie Info</strong>
   - learn more about the given movie
   - read about production process
 
-- Watch Trailers
+- <strong>Watch Trailers</strong>
   - watch movie trailer
   - enjoy the experience
 
