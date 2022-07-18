@@ -146,7 +146,9 @@ Movies Now is a place where you can find your favorite movies. The application g
 
 # Application Pictures
 
-  ## Laptop
+  ### Laptop
+  
+  #### Home
   ![movies-now-home-lp](https://user-images.githubusercontent.com/95768526/179507553-245b2968-0b12-4098-916b-7d58f3463508.png)
 
   
