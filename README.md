@@ -64,6 +64,10 @@ Movies Now is a place where you can find your favorite movies. The application g
 - Download
   - registered users can download movies
 
+# Dependencies
 
-
-
+  - React
+  - React Router 
+  - React Loading
+  - React Player
+  - Firebase
