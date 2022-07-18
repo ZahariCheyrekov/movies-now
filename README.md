@@ -75,7 +75,7 @@ Movies Now is a place where you can find your favorite movies. The application g
 # Movies Now Packages
 
   - API
-    - requester - function for making `GET, PUT, POST, PATCH` and `DELETE` requests  
+    - requester - function for making `GET`, `PUT`, `POST`, `PATCH` and `DELETE` requests  
   
   - Assets
     - package for all assets related to the application
