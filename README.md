@@ -8,7 +8,7 @@ Movies Now is a place where you can find your favorite movies. The application g
 
 # How to run the app on your computer
 
-1. You can download the project zip file or you can clone the repository directly.
+1. You can download the project ZIP file or you can clone the repository directly.
 2. Open the project with IDE.
 3. Open terminal with `Ctrl + J`.
 4. Navigate to movies-now folder with `cd movies-now`.
