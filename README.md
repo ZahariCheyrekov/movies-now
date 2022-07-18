@@ -22,3 +22,5 @@ Movies Now is a place where you can find your favorite movies. The application g
 - The registered users can create movies they love. 
 - They can explore the movies they added and also the other movies created by different users.
 - They can create movie by navigating to create page or simply by going to `/create`.
+
+# Features
