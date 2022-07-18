@@ -13,5 +13,5 @@ Movies Now is a place where you can find your favorite movies. The application g
 3. Open terminal with `Ctrl + J`.
 4. Navigate to movies-now folder with `cd movies-now`.
 5. Type `npm i` to install all modules that are listed on `package.json` file and their dependencies.
-6. Type `npm start` to run the project in the browser. It will start on port 3000, but you can change it to another if necessary. Type `y` to do it.
+6. Type `npm start` to run the project in the browser. It will start on `http://localhost:3000`, but you can change it to another if necessary. Type `y` to do it.
 7. Explore Movies Now.
