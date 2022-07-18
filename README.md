@@ -16,7 +16,6 @@ Movies Now is a place where you can find your favorite movies. The application g
 6. Type `npm start` to run the project in the browser. It will start on `http://localhost:3000`, but you can change it to another if necessary. Type `y` to do it.
 7. Explore Movies Now.
 
-
 # User movies
 
 - The registered users can create movies they love. 
@@ -81,7 +80,7 @@ Movies Now is a place where you can find your favorite movies. The application g
     - package for all assets related to the application
   
   - Components
-  - // TODO
+    - contain folders for each component of the application 
 
   - Contexts
     - AuthContext - context for user authentication 
@@ -125,8 +124,10 @@ Movies Now is a place where you can find your favorite movies. The application g
 
   - Validators 
     - inputValidator - function that checks if any of the given form input fields is empty
+    
     - passwordValidator
       - passwordLengthValidator - checks if the entered password is less than 6 characters
       - passwordEqualityValidator - checks if repeated password is equal to the original password
+    
     - yearValidator - checks if the movie year is between 1888 and current year
 
