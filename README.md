@@ -116,7 +116,10 @@ Movies Now is a place where you can find your favorite movies. The application g
       - register - register user with email and password
       - logout - ends access to the application
     
-  - Validators
-
-
+  - Utils
+    - genreUtils 
+      - toggleActiveStyle - returns style class name for the selected genre
+    
+    - movieUtils
+      - getMoviesByData - returns movie information by the given movie data type (title, genre, description, imageUrl, trailerUrl, overview, year)   
 
