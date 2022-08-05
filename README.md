@@ -20,7 +20,7 @@ Movies Now is a place where you can find your favorite movies. The application g
 # <p id="howto">How to run the app on your computer</p>
 
 1. You can download the project ZIP file or you can clone the repository directly.
-2. Open the project with IDE.
+2. Open the project with IDE/Code Editor.
 3. Open terminal with `Ctrl + J`.
 4. Navigate to movies-now folder with `cd movies-now`.
 5. Type `npm i` to install all modules that are listed on `package.json` file and their dependencies.
