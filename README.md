@@ -10,7 +10,7 @@ You can visit the project from here: https://movies-noww.herokuapp.com/
   - <a href="#ff">Future Features</a>
   - <a href="#dep">Dependencies</a>
   - <a href="#movnowpckg">Movies Now Packages</a>
-  - <a href="#tech">Tech</a>
+  - <a href="#tech">Tech</a> 
   - <a href="#apppic">Application Pictures</a>
 
 #  <p id="about">About this project</p>
