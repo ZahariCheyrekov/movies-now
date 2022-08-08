@@ -13,5 +13,5 @@ export const createMovieHandler = (ev, navigate) => {
     }
 
     createNewMovie(data);
-    navigate('/movies')
+    navigate('/movies');
 }
