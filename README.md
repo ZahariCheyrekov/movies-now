@@ -158,7 +158,7 @@ Movies Now is a place where you can find your favorite movies. The application g
 
 # <p id="apppic">Application Pictures</p>
 
-  ### Laptop
+  ### Computer
   
   #### Home
   ![movies-now-home-lp](https://user-images.githubusercontent.com/95768526/179507553-245b2968-0b12-4098-916b-7d58f3463508.png)
@@ -179,7 +179,7 @@ Movies Now is a place where you can find your favorite movies. The application g
   ![movies-now-register-lp](https://user-images.githubusercontent.com/95768526/179508821-656f3b7e-d47b-4867-aea9-392b9ce5c754.png)
 
 
-  ### Phone
+  ### Mobile
   
   #### Home
   ![movies-now-home-ph](https://user-images.githubusercontent.com/95768526/179510318-194cc494-fa4d-4c5a-8fc0-8abbb16b76a1.png)
